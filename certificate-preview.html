@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Certificate Preview | Enamul Haque Skill Passport</title>
+  <link rel="icon" href="assets/ehsp-logo.png" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    :root { --navy:#123a73; --navy-dark:#0c2951; --gold:#c9a24a; --line:#d6dde8; --ink:#1f2f46; --muted:#5d6c81; }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family:Inter,Arial,sans-serif; background:linear-gradient(180deg,#eef3f9,#f7f8fb); color:var(--ink); padding:2rem 1rem 4rem; }
+    .page { max-width:1160px; margin:0 auto; }
+    .page-header { max-width:980px; margin:0 auto 1.4rem; text-align:center; }
+    .page-header h1 { margin:0; color:var(--navy-dark); font-size:clamp(2rem,3vw,3rem); }
+    .page-header p { color:var(--muted); line-height:1.6; }
+    .certificate { position:relative; max-width:1020px; margin:0 auto; background:#fff; border:14px solid var(--navy); border-radius:24px; box-shadow:0 30px 70px rgba(18,58,115,.18); overflow:hidden; }
+    .certificate:before { content:""; position:absolute; inset:18px; border:2px solid rgba(201,162,74,.65); border-radius:16px; pointer-events:none; }
+    .inner { position:relative; z-index:1; padding:2.2rem 3rem 2.4rem; }
+    .top { display:flex; justify-content:space-between; align-items:center; gap:1.5rem; border-bottom:1px solid #e8edf5; padding-bottom:1.25rem; }
+    .brand { display:flex; align-items:center; gap:1rem; }
+    .brand img { width:88px; height:88px; object-fit:contain; border-radius:50%; background:#fff; }
+    .brand strong { display:block; color:var(--navy-dark); font-size:1.4rem; }
+    .brand span { display:block; color:var(--muted); margin-top:.2rem; }
+    .tag { padding:.65rem .9rem; border-radius:999px; background:#eef4ff; color:var(--navy); font-weight:800; font-size:.88rem; letter-spacing:.04em; text-transform:uppercase; white-space:nowrap; }
+    .content { text-align:center; padding:2rem 0 1.5rem; }
+    .eyebrow { color:var(--gold); text-transform:uppercase; letter-spacing:.24em; font-weight:800; font-size:.9rem; }
+    .title { margin:.8rem 0 0; font-family:"Playfair Display",Georgia,serif; color:var(--navy-dark); font-size:clamp(2.4rem,5vw,4rem); line-height:1.1; }
+    .subtitle { max-width:720px; margin:.9rem auto 0; color:var(--muted); line-height:1.7; }
+    .learner { margin:1.6rem 0 0; font-family:"Playfair Display",Georgia,serif; color:var(--navy); font-size:clamp(2rem,4vw,3.2rem); line-height:1.15; }
+    .line { width:min(520px,88%); height:2px; background:linear-gradient(90deg,transparent,var(--gold),transparent); margin:.7rem auto 1rem; }
+    .statement { max-width:760px; margin:.85rem auto 0; line-height:1.8; }
+    .statement strong { color:var(--navy-dark); }
+    .pill { display:inline-block; margin-top:1.1rem; padding:.7rem 1rem; border-radius:999px; background:#faf6eb; border:1px solid rgba(201,162,74,.45); color:var(--navy-dark); font-weight:700; }
+    .meta { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:.9rem; margin-top:1.75rem; }
+    .meta-card { padding:1rem .9rem; border:1px solid var(--line); border-radius:14px; background:#fbfcfe; }
+    .meta-card span { display:block; color:var(--muted); font-size:.8rem; text-transform:uppercase; letter-spacing:.08em; font-weight:800; }
+    .meta-card strong { display:block; color:var(--navy-dark); margin-top:.4rem; font-size:1rem; line-height:1.4; }
+    .bottom { display:grid; grid-template-columns:1.05fr .95fr; gap:1rem; align-items:end; margin-top:2rem; padding-top:1.4rem; border-top:1px solid #e8edf5; }
+    .verify { text-align:left; color:var(--muted); line-height:1.7; }
+    .verify strong { display:block; color:var(--navy-dark); margin-bottom:.35rem; }
+    .sig { text-align:center; justify-self:end; min-width:280px; }
+    .sig img { max-width:240px; max-height:82px; width:auto; height:auto; object-fit:contain; filter:contrast(1.1); }
+    .sig-line { height:1px; background:#cad5e4; margin:.4rem 0 .7rem; }
+    .sig strong { display:block; color:var(--navy-dark); font-size:1.05rem; }
+    .sig span { display:block; color:var(--muted); margin-top:.2rem; line-height:1.5; }
+    .footer { margin-top:1.4rem; padding-top:.8rem; border-top:1px dashed #d9e1ed; text-align:center; color:var(--muted); font-size:.9rem; line-height:1.6; }
+    .footer strong { color:var(--navy-dark); }
+    @media(max-width:860px){ .inner{padding:1.5rem 1.2rem 1.8rem;} .top,.bottom{display:grid;grid-template-columns:1fr;} .brand{justify-content:center;text-align:center;flex-direction:column;} .tag{justify-self:center;} .meta{grid-template-columns:repeat(2,minmax(0,1fr));} .verify,.sig{text-align:center;justify-self:center;} }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="page-header">
+      <h1>Certificate Preview</h1>
+      <p>This preview shows the proposed certificate layout using the Skill Passport logo and Enamul Haque signature asset.</p>
+    </div>
+    <section class="certificate" aria-label="Certificate preview">
+      <div class="inner">
+        <div class="top">
+          <div class="brand"><img src="assets/ehsp-logo.png" alt="Enamul Haque Skill Passport logo" /><div><strong>Enamul Haque Skill Passport</strong><span>Free Open Learning Recognition Initiative</span></div></div>
+          <div class="tag">Certificate Preview</div>
+        </div>
+        <div class="content">
+          <div class="eyebrow">Open Learning Recognition</div>
+          <h2 class="title">Certificate of Achievement</h2>
+          <p class="subtitle">This certifies that the learner named below has successfully completed the assessment requirements for the following learning pathway.</p>
+          <div class="learner">Sample Learner Name</div>
+          <div class="line"></div>
+          <p class="statement">has successfully passed the assessment for <strong>CSE For Non CSE Students</strong> and completed <strong>Module 1: Computer Science Fundamentals</strong> as part of the open learning recognition journey.</p>
+          <div class="pill">Result: Passed with 41 out of 50</div>
+          <div class="meta">
+            <div class="meta-card"><span>Course</span><strong>CSE For Non CSE Students</strong></div>
+            <div class="meta-card"><span>Module</span><strong>Module 1 Computer Science Fundamentals</strong></div>
+            <div class="meta-card"><span>Issue Date</span><strong>24 June 2026</strong></div>
+            <div class="meta-card"><span>Certificate ID</span><strong>EHSP CSE1 20260624 0001</strong></div>
+          </div>
+        </div>
+        <div class="bottom">
+          <div class="verify"><strong>Verification</strong>This certificate may be verified through the Enamul Haque Skill Passport portal using the certificate ID shown above.</div>
+          <div class="sig"><img src="assets/enamul_haque_signature.png" alt="Signature of Enamul Haque" /><div class="sig-line"></div><strong>Enamul Haque</strong><span>Founder and Issuer<br />Enamul Haque Skill Passport</span></div>
+        </div>
+        <div class="footer"><strong>Recognition Note:</strong> This certificate recognises open learning achievement and assessment success within Enamul Haque Skill Passport. It does not represent a university degree or external academic accreditation.</div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
