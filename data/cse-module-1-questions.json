@@ -1,0 +1,347 @@
+{
+  "courseId": "cse-non-cse",
+  "moduleId": "module-1",
+  "title": "CSC For Non CSC Students Module 1 Completion Assessment",
+  "language": "bn",
+  "version": "0.1.0",
+  "status": "draft",
+  "assessmentPolicy": {
+    "bankSizeTarget": 100,
+    "currentBankSize": 20,
+    "questionsPerAttempt": 50,
+    "durationMinutes": 60,
+    "passMarkPercent": 70,
+    "questionType": "multiple_choice",
+    "optionsPerQuestion": 4,
+    "certificateEligibleAfterPass": true,
+    "shuffleQuestions": true,
+    "shuffleOptions": false
+  },
+  "sourceReferences": [
+    {
+      "title": "CSE for Non CSE Students GitBook",
+      "url": "https://haquenam.gitbook.io/learningwithenam/cse"
+    },
+    {
+      "title": "Unit 1 Practice Exercise",
+      "url": "https://haquenam.gitbook.io/learningwithenam/cse/cse4ncseuni1/unit1exercises"
+    }
+  ],
+  "schema": {
+    "id": "unique question identifier",
+    "topic": "module topic",
+    "difficulty": "easy | medium | hard",
+    "question": "question text",
+    "options": [
+      "option 1",
+      "option 2",
+      "option 3",
+      "option 4"
+    ],
+    "correctOptionIndex": "zero based index from 0 to 3",
+    "explanation": "short learner friendly explanation",
+    "source": "source topic or GitBook page"
+  },
+  "questions": [
+    {
+      "id": "cse_m1_q001",
+      "topic": "course-purpose",
+      "difficulty": "easy",
+      "question": "নন সিএসই শিক্ষার্থীদের জন্য এই কোর্সের প্রধান উদ্দেশ্য কী?",
+      "options": [
+        "শুধু প্রোগ্রামিং মুখস্থ করানো",
+        "কম্পিউটার সায়েন্সের মৌলিক ধারণা সহজ ভাষায় শেখানো",
+        "শুধু হার্ডওয়্যার মেরামত শেখানো",
+        "শুধু সার্চ ইঞ্জিন ব্যবহার শেখানো"
+      ],
+      "correctOptionIndex": 1,
+      "explanation": "এই কোর্সের উদ্দেশ্য হলো নন সিএসই শিক্ষার্থীদের জন্য কম্পিউটার সায়েন্সের ভিত্তি সহজভাবে বোঝানো।",
+      "source": "CSE course overview"
+    },
+    {
+      "id": "cse_m1_q002",
+      "topic": "computer-science-foundations",
+      "difficulty": "easy",
+      "question": "কম্পিউটার সায়েন্স মূলত কোন বিষয় নিয়ে কাজ করে?",
+      "options": [
+        "শুধু কম্পিউটার কেনা ও বিক্রি",
+        "শুধু টাইপিং শেখা",
+        "কম্পিউটিংয়ের তাত্ত্বিক ও প্রায়োগিক ধারণা",
+        "শুধু মোবাইল অ্যাপ ব্যবহার"
+      ],
+      "correctOptionIndex": 2,
+      "explanation": "কম্পিউটার সায়েন্স প্রোগ্রামিংয়ের বাইরেও কম্পিউটিংয়ের তত্ত্ব, পদ্ধতি এবং বাস্তব প্রয়োগ নিয়ে কাজ করে।",
+      "source": "Unit 1: Computer Science Fundamentals"
+    },
+    {
+      "id": "cse_m1_q003",
+      "topic": "cs-vs-computer-engineering",
+      "difficulty": "medium",
+      "question": "কম্পিউটার সায়েন্স এবং কম্পিউটার ইঞ্জিনিয়ারিংয়ের মধ্যে সবচেয়ে ভালো পার্থক্য কোনটি?",
+      "options": [
+        "কম্পিউটার সায়েন্স শুধু হার্ডওয়্যার বানায়",
+        "কম্পিউটার ইঞ্জিনিয়ারিং শুধু সোশ্যাল মিডিয়া শেখায়",
+        "কম্পিউটার সায়েন্স কম্পিউটিং ধারণা ও সফটওয়্যারের দিকে বেশি মনোযোগ দেয়, আর ইঞ্জিনিয়ারিং হার্ডওয়্যার ও সিস্টেম ডিজাইনের দিকেও মনোযোগ দেয়",
+        "দুটির মধ্যে কোনো পার্থক্য নেই"
+      ],
+      "correctOptionIndex": 2,
+      "explanation": "দুই ক্ষেত্র সম্পর্কিত হলেও তাদের ফোকাস এক নয়। কম্পিউটার সায়েন্সে ধারণা, অ্যালগরিদম ও সফটওয়্যার গুরুত্বপূর্ণ, আর ইঞ্জিনিয়ারিংয়ে হার্ডওয়্যার ও সিস্টেম ডিজাইনও গুরুত্বপূর্ণ।",
+      "source": "Unit 1: CS vs Computer Engineering"
+    },
+    {
+      "id": "cse_m1_q004",
+      "topic": "computer-history",
+      "difficulty": "easy",
+      "question": "কম্পিউটারের জনক হিসেবে সাধারণত কাকে বলা হয়?",
+      "options": [
+        "অ্যালান টুরিং",
+        "চার্লস ব্যাবেজ",
+        "বিল গেটস",
+        "স্টিভ জবস"
+      ],
+      "correctOptionIndex": 1,
+      "explanation": "চার্লস ব্যাবেজকে আধুনিক কম্পিউটারের ধারণার অন্যতম পথিকৃৎ হিসেবে ধরা হয়।",
+      "source": "Unit 1: Computer History"
+    },
+    {
+      "id": "cse_m1_q005",
+      "topic": "computer-generations",
+      "difficulty": "easy",
+      "question": "প্রথম প্রজন্মের কম্পিউটারের একটি গুরুত্বপূর্ণ বৈশিষ্ট্য কী ছিল?",
+      "options": [
+        "মাইক্রোপ্রসেসর",
+        "ভ্যাকুয়াম টিউব",
+        "ক্লাউড কম্পিউটিং",
+        "কৃত্রিম বুদ্ধিমত্তা"
+      ],
+      "correctOptionIndex": 1,
+      "explanation": "প্রথম প্রজন্মের কম্পিউটারে ভ্যাকুয়াম টিউব ব্যবহার করা হতো।",
+      "source": "Unit 1: Computer History and Generations"
+    },
+    {
+      "id": "cse_m1_q006",
+      "topic": "computer-architecture",
+      "difficulty": "medium",
+      "question": "CPU এর প্রধান কাজ কোনটি?",
+      "options": [
+        "কম্পিউটারের সব হিসাব, নির্দেশনা এবং প্রসেসিং পরিচালনা করা",
+        "শুধু ছবি দেখানো",
+        "শুধু ফাইল সংরক্ষণ করা",
+        "শুধু ইন্টারনেট সংযোগ দেওয়া"
+      ],
+      "correctOptionIndex": 0,
+      "explanation": "CPU কম্পিউটারের কেন্দ্রীয় প্রসেসিং ইউনিট। এটি নির্দেশনা প্রক্রিয়াকরণ এবং হিসাবের প্রধান কাজ করে।",
+      "source": "Unit 1: Computer Architecture"
+    },
+    {
+      "id": "cse_m1_q007",
+      "topic": "computer-architecture",
+      "difficulty": "easy",
+      "question": "CPU এর তিনটি প্রধান অংশ কোনগুলো?",
+      "options": [
+        "কীবোর্ড, মাউস, মনিটর",
+        "ALU, কন্ট্রোল ইউনিট, মেমরি ইউনিট",
+        "RAM, ROM, হার্ডড্রাইভ",
+        "ইনপুট, আউটপুট, স্পিকার"
+      ],
+      "correctOptionIndex": 1,
+      "explanation": "CPU সাধারণত ALU, কন্ট্রোল ইউনিট এবং মেমরি ইউনিটের মাধ্যমে নির্দেশনা ও ডেটা প্রক্রিয়া করে।",
+      "source": "Unit 1: Processing Units"
+    },
+    {
+      "id": "cse_m1_q008",
+      "topic": "input-output-devices",
+      "difficulty": "easy",
+      "question": "নিচের কোনটি ইনপুট ডিভাইসের উদাহরণ?",
+      "options": [
+        "প্রিন্টার",
+        "স্পিকার",
+        "কীবোর্ড",
+        "মনিটর"
+      ],
+      "correctOptionIndex": 2,
+      "explanation": "কীবোর্ড ব্যবহার করে ব্যবহারকারী কম্পিউটারে তথ্য বা নির্দেশনা দেয়, তাই এটি ইনপুট ডিভাইস।",
+      "source": "Unit 1: Input and Output Devices"
+    },
+    {
+      "id": "cse_m1_q009",
+      "topic": "memory-storage",
+      "difficulty": "medium",
+      "question": "নন ভোলাটাইল মেমরি বলতে কী বোঝায়?",
+      "options": [
+        "বিদ্যুৎ বন্ধ হলে যেখানে ডেটা হারিয়ে যায়",
+        "যেখানে ডেটা স্থায়ীভাবে থাকে",
+        "শুধু প্রসেসিংয়ের সময় ব্যবহৃত মেমরি",
+        "শুধু গ্রাফিক্স প্রসেসিংয়ের জন্য ব্যবহৃত মেমরি"
+      ],
+      "correctOptionIndex": 1,
+      "explanation": "নন ভোলাটাইল মেমরিতে বিদ্যুৎ বন্ধ হলেও ডেটা সংরক্ষিত থাকতে পারে।",
+      "source": "Unit 1: Computer Data Storage"
+    },
+    {
+      "id": "cse_m1_q010",
+      "topic": "software",
+      "difficulty": "easy",
+      "question": "সিস্টেম সফটওয়্যারের একটি উদাহরণ কোনটি?",
+      "options": [
+        "অপারেটিং সিস্টেম",
+        "ওয়ার্ড প্রসেসর",
+        "ভিডিও প্লেয়ার",
+        "ইমেইল অ্যাপ"
+      ],
+      "correctOptionIndex": 0,
+      "explanation": "অপারেটিং সিস্টেম হার্ডওয়্যার ও অ্যাপ্লিকেশন সফটওয়্যারের মধ্যে সমন্বয় করে, তাই এটি সিস্টেম সফটওয়্যার।",
+      "source": "Unit 1: Computer Software"
+    },
+    {
+      "id": "cse_m1_q011",
+      "topic": "operating-systems",
+      "difficulty": "medium",
+      "question": "অপারেটিং সিস্টেমের প্রধান ভূমিকা কী?",
+      "options": [
+        "শুধু গান চালানো",
+        "হার্ডওয়্যার এবং সফটওয়্যার রিসোর্স পরিচালনা করা",
+        "শুধু ওয়েবসাইট তৈরি করা",
+        "শুধু ছবি সম্পাদনা করা"
+      ],
+      "correctOptionIndex": 1,
+      "explanation": "অপারেটিং সিস্টেম কম্পিউটারের হার্ডওয়্যার, সফটওয়্যার, মেমরি, ফাইল এবং প্রোগ্রাম ব্যবস্থাপনায় সহায়তা করে।",
+      "source": "Unit 1: Operating Systems"
+    },
+    {
+      "id": "cse_m1_q012",
+      "topic": "operating-systems",
+      "difficulty": "easy",
+      "question": "CLI এর পূর্ণরূপ কী?",
+      "options": [
+        "Command Line Interface",
+        "Computer Logic Input",
+        "Central Link Integration",
+        "Control Level Internet"
+      ],
+      "correctOptionIndex": 0,
+      "explanation": "CLI এর পূর্ণরূপ Command Line Interface। এতে ব্যবহারকারী টেক্সট কমান্ড দিয়ে কাজ করে।",
+      "source": "Unit 1: CLI and GUI"
+    },
+    {
+      "id": "cse_m1_q013",
+      "topic": "operating-systems",
+      "difficulty": "medium",
+      "question": "CLI এবং GUI এর মধ্যে সঠিক পার্থক্য কোনটি?",
+      "options": [
+        "CLI গ্রাফিকাল, GUI টেক্সট ভিত্তিক",
+        "CLI কমান্ড ভিত্তিক, GUI গ্রাফিকাল উপাদান ভিত্তিক",
+        "CLI শুধু মোবাইলে চলে",
+        "GUI শুধু সার্ভারে চলে"
+      ],
+      "correctOptionIndex": 1,
+      "explanation": "CLI তে টেক্সট কমান্ড ব্যবহার করা হয়, আর GUI তে আইকন, মেনু, বাটন এবং মাউস ভিত্তিক ইন্টারফেস ব্যবহার করা হয়।",
+      "source": "Unit 1: CLI and GUI"
+    },
+    {
+      "id": "cse_m1_q014",
+      "topic": "computer-types",
+      "difficulty": "easy",
+      "question": "বিশেষ উদ্দেশ্য কম্পিউটার বলতে কী বোঝায়?",
+      "options": [
+        "যে কম্পিউটার সব ধরনের কাজের জন্য তৈরি",
+        "যে কম্পিউটার একটি নির্দিষ্ট কাজের জন্য তৈরি",
+        "যে কম্পিউটার শুধু গেম খেলার জন্য",
+        "যে কম্পিউটার শুধু ইন্টারনেট চালানোর জন্য"
+      ],
+      "correctOptionIndex": 1,
+      "explanation": "বিশেষ উদ্দেশ্য কম্পিউটার নির্দিষ্ট কাজ বা নির্দিষ্ট পরিবেশের জন্য তৈরি করা হয়।",
+      "source": "Unit 1: Types of Computers"
+    },
+    {
+      "id": "cse_m1_q015",
+      "topic": "computer-types",
+      "difficulty": "medium",
+      "question": "সুপার কম্পিউটার সাধারণত কোন ধরনের কাজে ব্যবহৃত হয়?",
+      "options": [
+        "সাধারণ টাইপিং কাজ",
+        "অতি জটিল বৈজ্ঞানিক হিসাব ও সিমুলেশন",
+        "শুধু গান শোনা",
+        "শুধু সোশ্যাল মিডিয়া ব্যবহার"
+      ],
+      "correctOptionIndex": 1,
+      "explanation": "সুপার কম্পিউটার খুব দ্রুত এবং বিশাল পরিমাণ হিসাব করতে পারে, তাই গবেষণা, আবহাওয়া, সিমুলেশন এবং বৈজ্ঞানিক কাজে ব্যবহৃত হয়।",
+      "source": "Unit 1: Types of Computers"
+    },
+    {
+      "id": "cse_m1_q016",
+      "topic": "real-world-use",
+      "difficulty": "medium",
+      "question": "শিক্ষা, গবেষণা, ব্যবসা ও শিল্পে কম্পিউটারের ব্যবহার শেখার মূল কারণ কী?",
+      "options": [
+        "শুধু পরীক্ষায় নম্বর পাওয়ার জন্য",
+        "কম্পিউটার বাস্তব জীবনের বহু ক্ষেত্রে কীভাবে মূল্য তৈরি করে তা বোঝার জন্য",
+        "শুধু বিনোদনের জন্য",
+        "শুধু কম্পিউটার কেনার জন্য"
+      ],
+      "correctOptionIndex": 1,
+      "explanation": "কম্পিউটার শিক্ষা, গবেষণা, ব্যবসা, শিল্প এবং দৈনন্দিন জীবনে কাজকে দ্রুত, নির্ভুল এবং তথ্যনির্ভর করতে সাহায্য করে।",
+      "source": "Unit 1: Real World Use of Computers"
+    },
+    {
+      "id": "cse_m1_q017",
+      "topic": "social-media",
+      "difficulty": "easy",
+      "question": "সোশ্যাল মিডিয়া প্ল্যাটফর্মের একটি প্রাথমিক উদাহরণ কোনটি?",
+      "options": [
+        "Six Degrees",
+        "PowerPoint",
+        "Excel",
+        "Windows"
+      ],
+      "correctOptionIndex": 0,
+      "explanation": "Six Degrees সাধারণত প্রাথমিক সোশ্যাল নেটওয়ার্কিং প্ল্যাটফর্মগুলোর মধ্যে একটি হিসেবে উল্লেখ করা হয়।",
+      "source": "Unit 1: Social Media Platforms"
+    },
+    {
+      "id": "cse_m1_q018",
+      "topic": "search-engines",
+      "difficulty": "medium",
+      "question": "সার্চ ইঞ্জিন সাধারণত কোন ধাপগুলো ব্যবহার করে কাজ করে?",
+      "options": [
+        "শুধু বিজ্ঞাপন দেখানো",
+        "ক্রলিং, ইন্ডেক্সিং এবং র‍্যাঙ্কিং",
+        "শুধু ফাইল ডাউনলোড",
+        "শুধু সোশ্যাল মিডিয়া শেয়ার"
+      ],
+      "correctOptionIndex": 1,
+      "explanation": "সার্চ ইঞ্জিন ওয়েব পেজ খুঁজে বের করে, তথ্য সংরক্ষণ করে এবং প্রাসঙ্গিকতার ভিত্তিতে ফলাফল সাজায়।",
+      "source": "Unit 1: Search Engines"
+    },
+    {
+      "id": "cse_m1_q019",
+      "topic": "seo",
+      "difficulty": "medium",
+      "question": "SEO কেন গুরুত্বপূর্ণ?",
+      "options": [
+        "ওয়েবসাইটকে সার্চ ফলাফলে বেশি দৃশ্যমান করতে",
+        "কম্পিউটার বন্ধ করতে",
+        "মেমরি মুছে ফেলতে",
+        "CPU বদলাতে"
+      ],
+      "correctOptionIndex": 0,
+      "explanation": "SEO ওয়েবসাইটের কনটেন্ট ও কাঠামো উন্নত করে সার্চ ইঞ্জিনে দৃশ্যমানতা বাড়াতে সাহায্য করে।",
+      "source": "Unit 1: Search Engines and SEO"
+    },
+    {
+      "id": "cse_m1_q020",
+      "topic": "gig-economy",
+      "difficulty": "medium",
+      "question": "গিগ ইকোনমির সঙ্গে কম্পিউটার সায়েন্সের মৌলিক জ্ঞান কেন সম্পর্কিত?",
+      "options": [
+        "কারণ সব গিগ কাজ শুধু ভিডিও দেখা",
+        "কারণ প্রযুক্তি বুঝলে ফ্রিল্যান্সিং ও রিমোট কাজের সুযোগ কাজে লাগানো সহজ হয়",
+        "কারণ কম্পিউটার সায়েন্স শুধু বিশ্ববিদ্যালয়ের জন্য",
+        "কারণ গিগ ইকোনমিতে কোনো ডিজিটাল দক্ষতা লাগে না"
+      ],
+      "correctOptionIndex": 1,
+      "explanation": "কম্পিউটার সায়েন্সের ভিত্তি ডিজিটাল কাজ, ফ্রিল্যান্সিং, রিমোট জব এবং প্রযুক্তিনির্ভর অর্থনীতিতে অংশগ্রহণের সক্ষমতা বাড়ায়।",
+      "source": "CSE course overview and Unit 1"
+    }
+  ]
+}
