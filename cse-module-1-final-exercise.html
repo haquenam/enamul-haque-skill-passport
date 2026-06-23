@@ -19,6 +19,7 @@
     .meta-card strong { display: block; font-size: 1.4rem; color: var(--ink); }
     .meta-card span { font-size: .82rem; font-weight: 800; color: var(--muted); }
     .timer { font-weight: 900; color: #8a1f1f; }
+    .policy-note { margin-top: 1rem; padding: 1rem; border-left: 5px solid var(--gold); border-radius: .9rem; background: #fffaf2; color: var(--muted); line-height: 1.65; }
     .question-area { display: grid; gap: 1rem; margin-top: 1rem; }
     .question-card h3 { font-family: "Noto Sans Bengali", "Inter", sans-serif; line-height: 1.65; }
     .options { list-style: none; padding: 0; margin: 0; display: grid; gap: .55rem; }
@@ -43,9 +44,10 @@
     <section class="exam-panel">
       <span class="eyebrow">Timed Certificate Assessment</span>
       <h1>CSE Module 1 Assessment</h1>
-      <p>This MVP assessment has 50 fixed questions, a 60 minute timer, and a pass mark of 35 correct answers.</p>
-      <p class="bn">এই এমভিপি অ্যাসেসমেন্টে ৫০টি প্রশ্ন, ৬০ মিনিট সময় এবং পাস করতে অন্তত ৩৫টি সঠিক উত্তর দরকার।</p>
+      <p>This assessment has 50 fixed questions, a 60 minute timer, and a pass mark of 35 correct answers.</p>
+      <p class="bn">এই অ্যাসেসমেন্টে ৫০টি প্রশ্ন, ৬০ মিনিট সময় এবং পাস করতে অন্তত ৩৫টি সঠিক উত্তর দরকার।</p>
       <div class="exam-meta"><div class="meta-card"><strong>50</strong><span>Questions</span></div><div class="meta-card"><strong>60</strong><span>Minutes</span></div><div class="meta-card"><strong>35</strong><span>Correct To Pass</span></div><div class="meta-card"><strong id="timer" class="timer">60:00</strong><span>Timer</span></div></div>
+      <div class="policy-note"><strong>Attempt and retake policy:</strong> Mock exam practice is unlimited. The final assessment allows a maximum of two attempts per learner. A certificate is issued only after passing. After two unsuccessful attempts, please review the learning materials before requesting a manual reset.</div>
       <div class="actions"><button class="button primary" id="startBtn" type="button">Start Timed Assessment</button><button class="button secondary" id="submitBtn" type="button" disabled>Submit Assessment</button></div>
       <div class="result-box" id="resultBox"></div>
     </section>
@@ -59,7 +61,7 @@
     async function loadQuestions(){const response=await fetch('data/cse-module-1-questions.json',{cache:'no-store'});const data=await response.json();questions=data.questions;}
     function render(){questionArea.innerHTML=questions.map((x,i)=>'<article class="question-card"><span class="eyebrow">Question '+(i+1)+'</span><h3>'+x.q+'</h3><ul class="options">'+x.o.map((o,j)=>'<li><label><input type="radio" name="q'+i+'" value="'+j+'"/> <span>'+String.fromCharCode(65+j)+'. '+o+'</span></label></li>').join('')+'</ul></article>').join('')}
     async function start(){if(started)return;started=true;await loadQuestions();render();startBtn.disabled=true;submitBtn.disabled=false;timer=setInterval(()=>{remaining--;timerEl.textContent=fmt(remaining);if(remaining<=0)submitExam()},1000)}
-    function submitExam(){if(timer)clearInterval(timer);let score=0;questions.forEach((x,i)=>{const s=document.querySelector('input[name="q'+i+'"]:checked');if(s&&Number(s.value)===x.c)score++});const pass=score>=35;questionArea.classList.add('locked');submitBtn.disabled=true;resultBox.classList.add('show');resultBox.innerHTML='<h2>'+(pass?'Passed':'Not passed')+'</h2><p>You scored <strong>'+score+' out of 50</strong>. Pass requirement is <strong>35 out of 50</strong>.</p><p class="bn">আপনার স্কোর <strong>'+score+'/50</strong>। পাস করতে দরকার <strong>35/50</strong>।</p><p>'+(pass?'You are eligible for certificate generation in the next certificate step.':'Please review Module 1 and try again later.')+'</p>';resultBox.scrollIntoView({behavior:'smooth',block:'center'})}
+    function submitExam(){if(timer)clearInterval(timer);let score=0;questions.forEach((x,i)=>{const s=document.querySelector('input[name="q'+i+'"]:checked');if(s&&Number(s.value)===x.c)score++});const pass=score>=35;questionArea.classList.add('locked');submitBtn.disabled=true;resultBox.classList.add('show');resultBox.innerHTML='<h2>'+(pass?'Passed':'Not passed')+'</h2><p>You scored <strong>'+score+' out of 50</strong>. Pass requirement is <strong>35 out of 50</strong>.</p><p class="bn">আপনার স্কোর <strong>'+score+'/50</strong>। পাস করতে দরকার <strong>35/50</strong>।</p><p>'+(pass?'You are eligible for certificate generation in the next certificate step.':'Please review Module 1. If this was your first final attempt, one retake is allowed. After two unsuccessful attempts, review the learning materials before requesting a manual reset.')+'</p>';resultBox.scrollIntoView({behavior:'smooth',block:'center'})}
     startBtn.addEventListener('click',start);submitBtn.addEventListener('click',submitExam);
   </script>
 </body>
