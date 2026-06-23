@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSE Module 1 Assessment | Enamul Haque Skill Passport</title>
+  <meta name="description" content="CSC For Non CSC Students Module 1 assessment landing page for Enamul Haque Skill Passport." />
+  <link rel="icon" href="assets/ehsp-logo.png" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Bengali:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .assessment-hero { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(320px, 0.95fr); gap: 1.5rem; align-items: stretch; padding: clamp(2rem, 5vw, 4rem) 0 2rem; }
+    .assessment-panel { padding: clamp(1.4rem, 3vw, 2.2rem); border: 1px solid rgba(229, 222, 212, 0.92); border-radius: 2rem; background: rgba(255, 255, 255, 0.9); box-shadow: 0 24px 60px rgba(20, 33, 61, 0.12); }
+    .assessment-logo { display: block; width: min(132px, 38vw); height: auto; margin-bottom: 1rem; border-radius: 50%; background: #ffffff; box-shadow: 0 18px 45px rgba(20, 33, 61, 0.16); }
+    .assessment-panel h1 { margin: 0.9rem 0 1rem; font-size: clamp(2.5rem, 6vw, 4.8rem); line-height: 0.98; letter-spacing: -0.06em; }
+    .assessment-panel h2 { margin: 0.6rem 0 0.6rem; font-size: clamp(1.5rem, 3vw, 2.3rem); line-height: 1.08; letter-spacing: -0.04em; }
+    .assessment-panel p { color: var(--muted); }
+    .quick-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.85rem; margin-top: 1.2rem; }
+    .quick-card { padding: 1rem; border: 1px solid var(--line); border-radius: 1rem; background: #fffaf2; }
+    .quick-card strong { display: block; font-size: 1.45rem; line-height: 1; color: var(--ink); }
+    .quick-card span { display: block; margin-top: 0.35rem; color: var(--muted); font-weight: 700; font-size: 0.88rem; }
+    .assessment-section { width: min(1180px, calc(100% - 2rem)); margin-inline: auto; padding: 2.5rem 0; }
+    .two-col { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+    .resource-grid, .coverage-grid, .step-grid { display: grid; gap: 1rem; }
+    .resource-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+    .coverage-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .step-grid { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+    .assessment-card { padding: 1.15rem; border: 1px solid var(--line); border-radius: 1.25rem; background: rgba(255, 255, 255, 0.92); box-shadow: 0 14px 34px rgba(20, 33, 61, 0.08); }
+    .assessment-card h3 { margin: 0.4rem 0 0.45rem; font-size: 1.15rem; }
+    .assessment-card p, .assessment-card li { color: var(--muted); font-size: 0.94rem; }
+    .assessment-card a { color: var(--accent); font-weight: 800; text-decoration: none; }
+    .assessment-card a:hover { text-decoration: underline; }
+    .checklist { list-style: none; padding: 0; margin: 1rem 0 0; }
+    .checklist li { display: flex; gap: 0.7rem; align-items: flex-start; padding: 0.65rem 0; color: var(--muted); border-bottom: 1px solid var(--line); }
+    .checklist li::before { content: "✓"; display: inline-grid; place-items: center; width: 1.35rem; height: 1.35rem; flex: 0 0 auto; border-radius: 50%; color: #ffffff; background: var(--green); font-size: 0.82rem; font-weight: 800; }
+    .status-note { margin-top: 1rem; padding: 1rem; border: 1px solid rgba(196, 147, 63, 0.4); border-radius: 1rem; background: #fffaf2; color: var(--muted); }
+    .button.disabled { color: #687385; background: #edf0f4; border-color: #d8dee8; box-shadow: none; cursor: not-allowed; }
+    .bn { font-family: "Noto Sans Bengali", "Inter", system-ui, sans-serif; }
+    @media (max-width: 980px) { .assessment-hero, .two-col, .resource-grid, .coverage-grid, .step-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Enamul Haque Skill Passport home">
+      <img src="assets/ehsp-logo.png" alt="Enamul Haque Skill Passport logo" style="width:3.2rem;height:3.2rem;border-radius:50%;object-fit:cover;box-shadow:0 12px 30px rgba(27,77,137,0.20);background:#ffffff;" />
+      <span><strong>Enamul Haque Skill Passport</strong><small>এনামুল হক স্কিল পাসপোর্ট</small></span>
+    </a>
+    <nav class="nav-links" aria-label="Primary navigation"><a href="index.html">Home</a><a href="#resources">Learning Materials</a><a href="#rules">Assessment Rules</a></nav>
+  </header>
+
+  <main>
+    <section class="assessment-hero hero-section">
+      <div class="assessment-panel">
+        <img class="assessment-logo" src="assets/ehsp-logo.png" alt="Enamul Haque Skill Passport logo" />
+        <span class="eyebrow">Pilot Assessment Landing Page</span>
+        <h1>CSC For Non CSC Students</h1>
+        <h2>Module 1 Completion Assessment</h2>
+        <p>Prepare for the first Skill Passport assessment by completing the Module 1 learning materials, practice activities, and readiness checks before registration opens.</p>
+        <p class="bn">মডিউল ১ শেখা শেষ করার পর অ্যাসেসমেন্টের জন্য প্রস্তুতি নিতে এই পেজ ব্যবহার করুন। রেজিস্ট্রেশন চালু হলে এখান থেকেই পরবর্তী ধাপে যেতে পারবেন।</p>
+        <div class="hero-actions compact-actions"><a class="button primary" href="#resources">View Learning Materials</a><a class="button secondary" href="index.html#pathways">Back To Portal</a></div>
+      </div>
+      <aside class="assessment-panel" id="rules">
+        <span class="eyebrow">Assessment Format</span>
+        <h2>What learners should expect</h2>
+        <div class="quick-grid">
+          <div class="quick-card"><strong>50</strong><span>MCQ Questions</span></div>
+          <div class="quick-card"><strong>60</strong><span>Minutes</span></div>
+          <div class="quick-card"><strong>70%</strong><span>Pass Mark</span></div>
+          <div class="quick-card"><strong>ID</strong><span>Certificate Verification</span></div>
+        </div>
+        <div class="status-note"><strong>Status:</strong> Registration and timed assessment will be added in the next build. This page currently prepares the learner journey and learning readiness.</div>
+      </aside>
+    </section>
+
+    <section class="assessment-section" id="resources">
+      <div class="section-heading"><span class="eyebrow">Learning Materials</span><h2>Complete these before taking the assessment</h2><p>The assessment should validate learning already completed across the public learning ecosystem. These links are the learner preparation route for Module 1.</p></div>
+      <div class="resource-grid">
+        <article class="assessment-card"><h3>GitBook CSE Course</h3><p>Start with the structured CSE for Non CSE Students GitBook page and Module 1 content.</p><a href="https://haquenam.gitbook.io/learningwithenam/cse" target="_blank" rel="noopener">Open GitBook Course</a></article>
+        <article class="assessment-card"><h3>Practice Exercises</h3><p>Use the available practice questions and exercises before attempting the certificate assessment.</p><a href="https://haquenam.gitbook.io/learningwithenam/cse/cse4ncseuni1/unit1exercises" target="_blank" rel="noopener">Open Unit 1 Exercises</a></article>
+        <article class="assessment-card"><h3>Video Lessons</h3><p>Watch the related Digital Deep Dive video lessons before registering for the assessment.</p><a href="https://www.youtube.com/@authorenam" target="_blank" rel="noopener">Visit YouTube Channel</a></article>
+        <article class="assessment-card"><h3>TechTalks Bangla</h3><p>Use the central learning portal for course links, updates, and additional resources.</p><a href="https://techtalksbangla.com" target="_blank" rel="noopener">Visit TechTalks Bangla</a></article>
+      </div>
+    </section>
+
+    <section class="assessment-section">
+      <div class="two-col">
+        <article class="assessment-card"><span class="eyebrow">Readiness Checklist</span><h2>Before registration opens</h2><ul class="checklist"><li>Complete the Module 1 video lessons.</li><li>Read the related GitBook notes.</li><li>Attempt the practice questions and exercises.</li><li>Review weak topics before taking the timed assessment.</li><li>Use your real name and email when registration opens.</li></ul></article>
+        <article class="assessment-card"><span class="eyebrow">Assessment Policy</span><h2>Initial pilot rules</h2><ul><li>Question type: multiple choice questions.</li><li>Questions shown: 50.</li><li>Time limit: 60 minutes.</li><li>Pass mark: 70 percent.</li><li>Certificate: generated only after passing.</li><li>Certificate ID: unique verification ID planned for the certificate release.</li></ul></article>
+      </div>
+    </section>
+
+    <section class="assessment-section">
+      <div class="section-heading"><span class="eyebrow">Coverage Blueprint</span><h2>Module 1 topics to prepare</h2><p>The final question bank should be generated from these topic groups so the assessment remains balanced and fair.</p></div>
+      <div class="coverage-grid">
+        <article class="assessment-card"><h3>Computer Science Basics</h3><p>Course purpose, CS mindset, digital literacy, computer science fundamentals, and the role of computer scientists.</p></article>
+        <article class="assessment-card"><h3>CS Vs Engineering</h3><p>Difference between computer science, computer engineering, hardware focus, software focus, and problem solving.</p></article>
+        <article class="assessment-card"><h3>History And Generations</h3><p>Computer history, major generations, technology evolution, and why these changes matter.</p></article>
+        <article class="assessment-card"><h3>Architecture And Hardware</h3><p>CPU, input, output, processing units, memory, storage, and core computer architecture concepts.</p></article>
+        <article class="assessment-card"><h3>Software And OS</h3><p>System software, application software, operating systems, file management, GUI, CLI, and memory management.</p></article>
+        <article class="assessment-card"><h3>Real World Digital Use</h3><p>Computer types, real world uses, social media, search engines, SEO basics, and online awareness.</p></article>
+      </div>
+    </section>
+
+    <section class="assessment-section">
+      <div class="section-heading"><span class="eyebrow">Next Build Sequence</span><h2>How this page will become a working assessment</h2></div>
+      <div class="step-grid">
+        <article class="assessment-card"><h3>1. Landing Page</h3><p>Completed now as the public preparation page.</p></article>
+        <article class="assessment-card"><h3>2. Question Bank</h3><p>Create 100 structured MCQs from Module 1 content.</p></article>
+        <article class="assessment-card"><h3>3. Registration</h3><p>Collect learner name, email, and readiness confirmation.</p></article>
+        <article class="assessment-card"><h3>4. Timed Exam</h3><p>Show 50 randomized questions with a 60 minute timer.</p></article>
+        <article class="assessment-card"><h3>5. Certificate</h3><p>Generate certificate and verification link after passing.</p></article>
+      </div>
+    </section>
+
+    <section class="assessment-section disclaimer">
+      <h2>Responsible recognition statement</h2>
+      <p>This assessment is part of Enamul Haque Skill Passport, a free open learning recognition initiative. It is designed for learning validation, progress recognition, and personal skill development. It is not a university degree, formal academic credit, or externally accredited professional qualification.</p>
+      <p class="bn">এই অ্যাসেসমেন্ট এনামুল হক স্কিল পাসপোর্টের একটি ফ্রি ওপেন লার্নিং রিকগনিশন উদ্যোগ। এটি শেখা যাচাই, প্রগ্রেস রিকগনিশন এবং ব্যক্তিগত স্কিল ডেভেলপমেন্টের জন্য তৈরি।</p>
+    </section>
+  </main>
+
+  <footer class="site-footer"><p>© 2026 Enamul Haque Skill Passport. An open learning recognition initiative by Enamul Haque.</p><p class="bn">© ২০২৬ এনামুল হক স্কিল পাসপোর্ট। এনামুল হকের ওপেন লার্নিং রিকগনিশন উদ্যোগ।</p></footer>
+</body>
+</html>
