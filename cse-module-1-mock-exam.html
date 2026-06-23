@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CSE Module 1 Mock Exam | Enamul Haque Skill Passport</title>
-  <meta name="description" content="Mock exam for CSC For Non CSC Students Module 1." />
+  <meta name="description" content="Mock exam for CSE For Non CSE Students Module 1." />
   <link rel="icon" href="assets/ehsp-logo.png" type="image/png" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -71,18 +71,12 @@
 
     function renderSummary(data) {
       const policy = data.exercisePolicy || {};
-      summaryCards.innerHTML = [
-        card(policy.questionCount || data.questions.length, 'Questions'),
-        card(policy.recommendedReadinessScore || 11, 'Ready Score'),
-        card('Mock', 'No Certificate')
-      ].join('');
+      summaryCards.innerHTML = [card(policy.questionCount || data.questions.length, 'Questions'), card(policy.recommendedReadinessScore || 11, 'Ready Score'), card('Mock', 'No Certificate')].join('');
     }
 
     function renderQuestions(data) {
       questionArea.innerHTML = data.questions.map((item, index) => {
-        const options = item.options.map((option, optionIndex) => `
-          <li><label data-question="${index}" data-option="${optionIndex}"><input type="radio" name="question_${index}" value="${optionIndex}" /><span>${String.fromCharCode(65 + optionIndex)}. ${option}</span></label></li>
-        `).join('');
+        const options = item.options.map((option, optionIndex) => `<li><label data-question="${index}" data-option="${optionIndex}"><input type="radio" name="question_${index}" value="${optionIndex}" /><span>${String.fromCharCode(65 + optionIndex)}. ${option}</span></label></li>`).join('');
         return `<article class="mock-card" data-card="${index}"><span class="eyebrow">Question ${index + 1}</span><h3>${item.question}</h3><ul class="option-list">${options}</ul><div class="explanation"><strong>Explanation:</strong> ${item.explanation}</div></article>`;
       }).join('');
     }
@@ -97,16 +91,8 @@
         const cardEl = document.querySelector(`[data-card="${index}"]`);
         cardEl.classList.add('submitted');
         const labels = cardEl.querySelectorAll('label');
-        labels.forEach(label => {
-          const optionIndex = Number(label.dataset.option);
-          label.classList.remove('correct', 'wrong');
-          if (optionIndex === item.correctOptionIndex) label.classList.add('correct');
-        });
-        if (selected) {
-          const selectedIndex = Number(selected.value);
-          if (selectedIndex === item.correctOptionIndex) score += 1;
-          else labels[selectedIndex].classList.add('wrong');
-        }
+        labels.forEach(label => { const optionIndex = Number(label.dataset.option); label.classList.remove('correct', 'wrong'); if (optionIndex === item.correctOptionIndex) label.classList.add('correct'); });
+        if (selected) { const selectedIndex = Number(selected.value); if (selectedIndex === item.correctOptionIndex) score += 1; else labels[selectedIndex].classList.add('wrong'); }
       });
       const ready = score >= recommended;
       resultBox.classList.add('show');
@@ -114,26 +100,9 @@
       resultBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
     }
 
-    function resetMockExam() {
-      document.querySelectorAll('input[type="radio"]').forEach(input => { input.checked = false; });
-      document.querySelectorAll('.mock-card').forEach(item => { item.classList.remove('submitted'); });
-      document.querySelectorAll('label').forEach(label => { label.classList.remove('correct', 'wrong'); });
-      resultBox.classList.remove('show');
-      resultBox.innerHTML = '';
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
+    function resetMockExam() { document.querySelectorAll('input[type="radio"]').forEach(input => { input.checked = false; }); document.querySelectorAll('.mock-card').forEach(item => { item.classList.remove('submitted'); }); document.querySelectorAll('label').forEach(label => { label.classList.remove('correct', 'wrong'); }); resultBox.classList.remove('show'); resultBox.innerHTML = ''; window.scrollTo({ top: 0, behavior: 'smooth' }); }
 
-    async function loadMockExam() {
-      try {
-        const response = await fetch('data/cse-module-1-final-exercise.json', { cache: 'no-store' });
-        if (!response.ok) throw new Error('Mock exam could not be loaded.');
-        mockExam = await response.json();
-        renderSummary(mockExam);
-        renderQuestions(mockExam);
-      } catch (error) {
-        questionArea.innerHTML = `<div class="mock-card"><p>${error.message}</p></div>`;
-      }
-    }
+    async function loadMockExam() { try { const response = await fetch('data/cse-module-1-final-exercise.json', { cache: 'no-store' }); if (!response.ok) throw new Error('Mock exam could not be loaded.'); mockExam = await response.json(); renderSummary(mockExam); renderQuestions(mockExam); } catch (error) { questionArea.innerHTML = `<div class="mock-card"><p>${error.message}</p></div>`; } }
 
     submitBtn.addEventListener('click', submitMockExam);
     resetBtn.addEventListener('click', resetMockExam);
