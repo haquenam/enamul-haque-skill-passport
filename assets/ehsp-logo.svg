@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Enamul Haque Skill Passport Logo</title>
+  <desc id="desc">Circular Enamul Haque Skill Passport emblem with EH monogram, shield, graduation cap, growth arrow, and gear.</desc>
+  <defs>
+    <path id="topArc" d="M 165 500 A 335 335 0 0 1 835 500" />
+    <path id="bottomArc" d="M 835 500 A 335 335 0 0 1 165 500" />
+    <linearGradient id="shieldGradient" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#08264D" />
+      <stop offset="1" stop-color="#0B3A6E" />
+    </linearGradient>
+  </defs>
+  <rect width="1000" height="1000" fill="#ffffff" />
+  <circle cx="500" cy="500" r="455" fill="#08264D" />
+  <circle cx="500" cy="500" r="420" fill="none" stroke="#ffffff" stroke-width="18" />
+  <circle cx="500" cy="500" r="347" fill="#ffffff" />
+  <circle cx="500" cy="500" r="317" fill="none" stroke="#08264D" stroke-width="14" />
+  <text font-family="Inter, Arial, sans-serif" font-size="72" font-weight="800" fill="#ffffff" letter-spacing="8">
+    <textPath href="#topArc" startOffset="50%" text-anchor="middle">ENAMUL HAQUE</textPath>
+  </text>
+  <text font-family="Inter, Arial, sans-serif" font-size="66" font-weight="800" fill="#ffffff" letter-spacing="8">
+    <textPath href="#bottomArc" startOffset="50%" text-anchor="middle">SKILL PASSPORT</textPath>
+  </text>
+  <path d="M 115 500 l 23 16 26 -8 -16 23 8 26 -23 -16 -26 8 16 -23 z" fill="#D8A84C" />
+  <path d="M 885 500 l -23 16 -26 -8 16 23 -8 26 23 -16 26 8 -16 -23 z" fill="#D8A84C" />
+  <path d="M 305 260 Q 500 165 695 260 L 695 510 Q 695 700 500 815 Q 305 700 305 510 Z" fill="url(#shieldGradient)" stroke="#ffffff" stroke-width="24" />
+  <path d="M 500 188 L 500 812" stroke="#ffffff" stroke-width="10" opacity="0.65" />
+  <path d="M 285 650 C 335 570 395 520 453 465 L 498 515 L 647 330" fill="none" stroke="#ffffff" stroke-width="42" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M 620 330 L 690 304 L 670 375 Z" fill="#ffffff" />
+  <path d="M 330 347 L 420 305 L 510 347 L 420 390 Z" fill="#ffffff" />
+  <path d="M 365 375 L 365 432 Q 420 468 475 432 L 475 375" fill="#ffffff" opacity="0.96" />
+  <path d="M 330 350 L 330 430" stroke="#ffffff" stroke-width="10" stroke-linecap="round" />
+  <circle cx="330" cy="448" r="14" fill="#ffffff" />
+  <g transform="translate(640 360)">
+    <circle cx="0" cy="0" r="55" fill="#ffffff" />
+    <circle cx="0" cy="0" r="24" fill="#08264D" />
+    <g fill="#ffffff">
+      <rect x="-8" y="-88" width="16" height="34" rx="4" />
+      <rect x="-8" y="54" width="16" height="34" rx="4" />
+      <rect x="54" y="-8" width="34" height="16" rx="4" />
+      <rect x="-88" y="-8" width="34" height="16" rx="4" />
+      <rect x="38" y="38" width="30" height="14" rx="4" transform="rotate(45 53 45)" />
+      <rect x="-68" y="38" width="30" height="14" rx="4" transform="rotate(-45 -53 45)" />
+      <rect x="38" y="-52" width="30" height="14" rx="4" transform="rotate(-45 53 -45)" />
+      <rect x="-68" y="-52" width="30" height="14" rx="4" transform="rotate(45 -53 -45)" />
+    </g>
+  </g>
+  <path d="M 325 585 Q 500 515 675 585 L 675 705 Q 500 790 325 705 Z" fill="#ffffff" />
+  <text x="500" y="690" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="150" font-weight="700" fill="#08264D">EH</text>
+</svg>
