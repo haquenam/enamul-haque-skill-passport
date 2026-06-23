@@ -26,7 +26,7 @@
     .resource-grid, .coverage-grid, .step-grid { display: grid; gap: 1rem; }
     .resource-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
     .coverage-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-    .step-grid { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+    .step-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
     .assessment-card { padding: 1.15rem; border: 1px solid var(--line); border-radius: 1.25rem; background: rgba(255, 255, 255, 0.92); box-shadow: 0 14px 34px rgba(20, 33, 61, 0.08); }
     .assessment-card h3 { margin: 0.4rem 0 0.45rem; font-size: 1.15rem; }
     .assessment-card p, .assessment-card li { color: var(--muted); font-size: 0.94rem; }
@@ -49,7 +49,7 @@
       <img src="assets/ehsp-logo.png" alt="Enamul Haque Skill Passport logo" style="width:3.2rem;height:3.2rem;border-radius:50%;object-fit:cover;box-shadow:0 12px 30px rgba(27,77,137,0.20);background:#ffffff;" />
       <span><strong>Enamul Haque Skill Passport</strong><small>এনামুল হক স্কিল পাসপোর্ট</small></span>
     </a>
-    <nav class="nav-links" aria-label="Primary navigation"><a href="index.html">Home</a><a href="#resources">Learning Materials</a><a href="cse-module-1-mock-exam.html">Mock Exam</a><a href="cse-module-1-register.html">Register</a></nav>
+    <nav class="nav-links" aria-label="Primary navigation"><a href="index.html">Home</a><a href="#resources">Learning Materials</a><a href="cse-module-1-mock-exam.html">Mock Exam</a><a href="cse-module-1-register.html">Start Assessment</a></nav>
   </header>
 
   <main>
@@ -59,12 +59,12 @@
         <span class="eyebrow">Module 1 Learner Pathway</span>
         <h1>CSC For Non CSC Students</h1>
         <h2>Module 1 Completion Assessment</h2>
-        <p>Complete the Module 1 learning materials, take the 15 question mock exam, then register for the certificate assessment.</p>
-        <p class="bn">মডিউল ১ শেখা শেষ করুন, ১৫টি প্রশ্নের মক এক্সাম দিন, তারপর সার্টিফিকেট অ্যাসেসমেন্টের জন্য রেজিস্ট্রেশন করুন।</p>
-        <div class="hero-actions compact-actions"><a class="button primary" href="cse-module-1-register.html">Register For Assessment</a><a class="button secondary" href="cse-module-1-mock-exam.html">Start Mock Exam</a><a class="button secondary" href="#resources">View Learning Materials</a></div>
+        <p>Complete the learning materials, try the mock exam, then click Start Assessment. You will register first, then continue to the timed assessment.</p>
+        <p class="bn">আগে লার্নিং ম্যাটেরিয়াল শেষ করুন, তারপর মক এক্সাম দিন। এরপর Start Assessment ক্লিক করুন। প্রথমে রেজিস্ট্রেশন হবে, তারপর টাইমড অ্যাসেসমেন্ট শুরু হবে।</p>
+        <div class="hero-actions compact-actions"><a class="button primary" href="cse-module-1-register.html">Start Assessment</a><a class="button secondary" href="cse-module-1-mock-exam.html">Try Mock Exam</a><a class="button secondary" href="#resources">View Learning Materials</a></div>
       </div>
       <aside class="assessment-panel" id="rules">
-        <span class="eyebrow">Certificate Assessment Format</span>
+        <span class="eyebrow">Assessment Format</span>
         <h2>What learners should expect</h2>
         <div class="quick-grid">
           <div class="quick-card"><strong>50</strong><span>MCQ Questions</span></div>
@@ -72,12 +72,12 @@
           <div class="quick-card"><strong>70%</strong><span>Pass Mark</span></div>
           <div class="quick-card"><strong>35</strong><span>Correct To Pass</span></div>
         </div>
-        <div class="status-note"><strong>Current step:</strong> Mock exam and registration are available. After registration, learners continue to the timed assessment page.</div>
+        <div class="status-note"><strong>How it works:</strong> Start Assessment opens registration first. After registration, the learner proceeds to the timed assessment flow.</div>
       </aside>
     </section>
 
     <section class="assessment-section" id="resources">
-      <div class="section-heading"><span class="eyebrow">Learning Materials</span><h2>Complete these before taking the assessment</h2><p>The assessment should validate learning already completed across the public learning ecosystem. These links are the learner preparation route for Module 1.</p></div>
+      <div class="section-heading"><span class="eyebrow">Learning Materials</span><h2>Complete these before taking the assessment</h2><p>The assessment validates learning already completed across the public learning ecosystem. These links are the learner preparation route for Module 1.</p></div>
       <div class="resource-grid">
         <article class="assessment-card"><h3>GitBook CSE Course</h3><p>Start with the structured CSE for Non CSE Students GitBook page and Module 1 content.</p><a href="https://haquenam.gitbook.io/learningwithenam/cse" target="_blank" rel="noopener">Open GitBook Course</a></article>
         <article class="assessment-card"><h3>Practice Exercises</h3><p>Use the available practice questions and exercises before attempting the certificate assessment.</p><a href="https://haquenam.gitbook.io/learningwithenam/cse/cse4ncseuni1/unit1exercises" target="_blank" rel="noopener">Open Unit 1 Exercises</a></article>
@@ -88,20 +88,8 @@
 
     <section class="assessment-section">
       <div class="two-col">
-        <article class="assessment-card"><span class="eyebrow">Readiness Checklist</span><h2>Before the certificate assessment</h2><ul class="checklist"><li>Complete the Module 1 video lessons.</li><li>Read the related GitBook notes.</li><li>Attempt the practice questions and exercises.</li><li>Take the 15 question mock exam.</li><li>Review weak topics before taking the timed assessment.</li><li>Use your real name and email when registering.</li></ul></article>
-        <article class="assessment-card"><span class="eyebrow">Registration</span><h2>Register your learner details</h2><p>Register your name, email, country, mock exam readiness score, and confirmation that you completed the Module 1 learning path.</p><a href="cse-module-1-register.html">Register For Assessment</a></article>
-      </div>
-    </section>
-
-    <section class="assessment-section">
-      <div class="section-heading"><span class="eyebrow">Coverage Blueprint</span><h2>Module 1 topics to prepare</h2><p>The mock exam and certificate assessment are based on these topic groups so the learner journey remains balanced and fair.</p></div>
-      <div class="coverage-grid">
-        <article class="assessment-card"><h3>Computer Science Basics</h3><p>Course purpose, CS mindset, digital literacy, computer science fundamentals, and the role of computer scientists.</p></article>
-        <article class="assessment-card"><h3>CS Vs Engineering</h3><p>Difference between computer science, computer engineering, hardware focus, software focus, and problem solving.</p></article>
-        <article class="assessment-card"><h3>History And Generations</h3><p>Computer history, major generations, technology evolution, and why these changes matter.</p></article>
-        <article class="assessment-card"><h3>Architecture And Hardware</h3><p>CPU, input, output, processing units, memory, storage, and core computer architecture concepts.</p></article>
-        <article class="assessment-card"><h3>Software And OS</h3><p>System software, application software, operating systems, file management, GUI, CLI, and memory management.</p></article>
-        <article class="assessment-card"><h3>Real World Digital Use</h3><p>Computer types, real world uses, social media, search engines, SEO basics, and online awareness.</p></article>
+        <article class="assessment-card"><span class="eyebrow">Readiness Checklist</span><h2>Before you start</h2><ul class="checklist"><li>Complete the Module 1 video lessons.</li><li>Read the related GitBook notes.</li><li>Attempt the practice questions and exercises.</li><li>Take the 15 question mock exam.</li><li>Review weak topics before taking the timed assessment.</li><li>Use your real name and email when starting the assessment.</li></ul></article>
+        <article class="assessment-card"><span class="eyebrow">Start Assessment</span><h2>Register first, then continue</h2><p>Start Assessment begins with a short registration step. After registration, the learner continues to the timed assessment flow.</p><a href="cse-module-1-register.html">Start Assessment</a></article>
       </div>
     </section>
 
@@ -110,9 +98,8 @@
       <div class="step-grid">
         <article class="assessment-card"><h3>1. Learn</h3><p>Complete the Module 1 videos and GitBook lessons.</p></article>
         <article class="assessment-card"><h3>2. Practice</h3><p>Use the GitBook practice questions and notes.</p></article>
-        <article class="assessment-card"><h3>3. Mock Exam</h3><p>Take the 15 question mock exam.</p><a href="cse-module-1-mock-exam.html">Open Mock Exam</a></article>
-        <article class="assessment-card"><h3>4. Register</h3><p>Register for the timed certificate assessment.</p><a href="cse-module-1-register.html">Register Now</a></article>
-        <article class="assessment-card"><h3>5. Start Assessment</h3><p>After registration, continue to the timed certificate assessment.</p></article>
+        <article class="assessment-card"><h3>3. Mock Exam</h3><p>Take the 15 question mock exam to check readiness.</p><a href="cse-module-1-mock-exam.html">Open Mock Exam</a></article>
+        <article class="assessment-card"><h3>4. Start Assessment</h3><p>Register first, then continue to the timed assessment.</p><a href="cse-module-1-register.html">Start Assessment</a></article>
       </div>
     </section>
 
