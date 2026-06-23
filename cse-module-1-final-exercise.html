@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSE Module 1 Final Exercise | Enamul Haque Skill Passport</title>
+  <meta name="description" content="Final exercise for CSC For Non CSC Students Module 1." />
+  <link rel="icon" href="assets/ehsp-logo.png" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Bengali:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .exercise-shell { width: min(980px, calc(100% - 2rem)); margin-inline: auto; padding: clamp(2rem, 5vw, 4rem) 0; }
+    .exercise-hero, .exercise-card, .result-box { padding: clamp(1.2rem, 3vw, 2rem); border: 1px solid var(--line); border-radius: 1.7rem; background: rgba(255,255,255,0.94); box-shadow: 0 18px 45px rgba(20,33,61,0.10); }
+    .exercise-hero h1 { margin: 0.8rem 0 0.8rem; font-size: clamp(2.2rem, 5vw, 4rem); line-height: 1; letter-spacing: -0.055em; }
+    .exercise-hero p, .exercise-card p { color: var(--muted); }
+    .exercise-summary { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.85rem; margin-top: 1.2rem; }
+    .summary-card { padding: 1rem; border: 1px solid var(--line); border-radius: 1rem; background: #fffaf2; }
+    .summary-card strong { display: block; color: var(--ink); font-size: 1.4rem; line-height: 1; }
+    .summary-card span { display: block; margin-top: 0.35rem; color: var(--muted); font-weight: 800; font-size: 0.86rem; }
+    .question-area { display: grid; gap: 1rem; margin-top: 1.2rem; }
+    .exercise-card h3 { margin: 0 0 0.8rem; font-family: "Noto Sans Bengali", "Inter", system-ui, sans-serif; font-size: 1.08rem; line-height: 1.7; }
+    .option-list { display: grid; gap: 0.55rem; margin: 0; padding: 0; list-style: none; }
+    .option-list label { display: flex; gap: 0.7rem; align-items: flex-start; padding: 0.75rem 0.85rem; border: 1px solid var(--line); border-radius: 0.9rem; background: #ffffff; color: var(--muted); font-family: "Noto Sans Bengali", "Inter", system-ui, sans-serif; line-height: 1.55; cursor: pointer; }
+    .option-list input { margin-top: 0.25rem; }
+    .option-list label.correct { border-color: rgba(23,107,58,0.45); background: #eaf8f0; color: #176b3a; font-weight: 800; }
+    .option-list label.wrong { border-color: rgba(191,55,55,0.35); background: #fff1f1; color: #8a1f1f; }
+    .explanation { display: none; margin-top: 0.8rem; padding: 0.9rem; border-left: 5px solid var(--gold); border-radius: 0.8rem; background: #fffaf2; color: var(--muted); font-family: "Noto Sans Bengali", "Inter", system-ui, sans-serif; line-height: 1.65; }
+    .submitted .explanation { display: block; }
+    .result-box { display: none; margin-top: 1.2rem; border-left: 6px solid var(--gold); }
+    .result-box.show { display: block; }
+    .result-box h2 { margin: 0 0 0.5rem; font-size: clamp(1.4rem, 3vw, 2.2rem); }
+    .exercise-actions { display: flex; flex-wrap: wrap; gap: 0.8rem; margin-top: 1.2rem; }
+    .bn { font-family: "Noto Sans Bengali", "Inter", system-ui, sans-serif; }
+    @media (max-width: 760px) { .exercise-summary { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Enamul Haque Skill Passport home">
+      <img src="assets/ehsp-logo.png" alt="Enamul Haque Skill Passport logo" style="width:3.2rem;height:3.2rem;border-radius:50%;object-fit:cover;box-shadow:0 12px 30px rgba(27,77,137,0.20);background:#ffffff;" />
+      <span><strong>Enamul Haque Skill Passport</strong><small>এনামুল হক স্কিল পাসপোর্ট</small></span>
+    </a>
+    <nav class="nav-links" aria-label="Primary navigation"><a href="index.html">Home</a><a href="cse-module-1.html">Module 1</a><a href="question-review.html">Question Review</a></nav>
+  </header>
+
+  <main class="exercise-shell">
+    <section class="exercise-hero">
+      <span class="eyebrow">Final Practice Exercise</span>
+      <h1>CSE Module 1 Final Exercise</h1>
+      <p>This 15 question exercise is a practice checkpoint before the certificate assessment. It does not generate a certificate.</p>
+      <p class="bn">এটি সার্টিফিকেট অ্যাসেসমেন্ট নয়। মডিউল ১ শেখা শেষে নিজের প্রস্তুতি যাচাই করার জন্য ১৫টি প্র্যাকটিস প্রশ্ন।</p>
+      <div class="exercise-summary" id="summaryCards"></div>
+      <div class="exercise-actions"><a class="button secondary" href="cse-module-1.html">Back To Module 1</a><button class="button primary" id="submitBtn" type="button">Submit Exercise</button><button class="button secondary" id="resetBtn" type="button">Reset</button></div>
+      <div class="result-box" id="resultBox" aria-live="polite"></div>
+    </section>
+
+    <section class="question-area" id="questionArea" aria-live="polite"></section>
+  </main>
+
+  <footer class="site-footer"><p>© 2026 Enamul Haque Skill Passport. An open learning recognition initiative by Enamul Haque.</p><p class="bn">© ২০২৬ এনামুল হক স্কিল পাসপোর্ট। এনামুল হকের ওপেন লার্নিং রিকগনিশন উদ্যোগ।</p></footer>
+
+  <script>
+    const questionArea = document.getElementById('questionArea');
+    const summaryCards = document.getElementById('summaryCards');
+    const submitBtn = document.getElementById('submitBtn');
+    const resetBtn = document.getElementById('resetBtn');
+    const resultBox = document.getElementById('resultBox');
+    let exercise = null;
+
+    function makeSummaryCard(value, label) {
+      return `<div class="summary-card"><strong>${value}</strong><span>${label}</span></div>`;
+    }
+
+    function renderSummary(data) {
+      const policy = data.exercisePolicy || {};
+      summaryCards.innerHTML = [
+        makeSummaryCard(policy.questionCount || data.questions.length, 'Questions'),
+        makeSummaryCard(policy.recommendedReadinessScore || 11, 'Ready Score'),
+        makeSummaryCard('Practice', 'No Certificate')
+      ].join('');
+    }
+
+    function renderQuestions(data) {
+      questionArea.innerHTML = data.questions.map((item, index) => {
+        const options = item.options.map((option, optionIndex) => `
+          <li>
+            <label data-question="${index}" data-option="${optionIndex}">
+              <input type="radio" name="question_${index}" value="${optionIndex}" />
+              <span>${String.fromCharCode(65 + optionIndex)}. ${option}</span>
+            </label>
+          </li>
+        `).join('');
+
+        return `
+          <article class="exercise-card" data-card="${index}">
+            <span class="eyebrow">Question ${index + 1}</span>
+            <h3>${item.question}</h3>
+            <ul class="option-list">${options}</ul>
+            <div class="explanation"><strong>Explanation:</strong> ${item.explanation}</div>
+          </article>
+        `;
+      }).join('');
+    }
+
+    function submitExercise() {
+      if (!exercise) return;
+      let score = 0;
+      const total = exercise.questions.length;
+      const recommended = exercise.exercisePolicy.recommendedReadinessScore || 11;
+
+      exercise.questions.forEach((item, index) => {
+        const selected = document.querySelector(`input[name="question_${index}"]:checked`);
+        const card = document.querySelector(`[data-card="${index}"]`);
+        card.classList.add('submitted');
+
+        const labels = card.querySelectorAll('label');
+        labels.forEach(label => {
+          const optionIndex = Number(label.dataset.option);
+          label.classList.remove('correct', 'wrong');
+          if (optionIndex === item.correctOptionIndex) label.classList.add('correct');
+        });
+
+        if (selected) {
+          const selectedIndex = Number(selected.value);
+          if (selectedIndex === item.correctOptionIndex) {
+            score += 1;
+          } else {
+            labels[selectedIndex].classList.add('wrong');
+          }
+        }
+      });
+
+      const ready = score >= recommended;
+      resultBox.classList.add('show');
+      resultBox.innerHTML = `
+        <h2>${ready ? 'Good readiness signal' : 'Review before assessment'}</h2>
+        <p>You scored <strong>${score} out of ${total}</strong>. Suggested readiness score is <strong>${recommended} out of ${total}</strong>.</p>
+        <p class="bn">আপনার স্কোর <strong>${score}/${total}</strong>। সার্টিফিকেট অ্যাসেসমেন্টের আগে অন্তত <strong>${recommended}/${total}</strong> স্কোর করা ভালো।</p>
+      `;
+      resultBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+
+    function resetExercise() {
+      document.querySelectorAll('input[type="radio"]').forEach(input => { input.checked = false; });
+      document.querySelectorAll('.exercise-card').forEach(card => { card.classList.remove('submitted'); });
+      document.querySelectorAll('label').forEach(label => { label.classList.remove('correct', 'wrong'); });
+      resultBox.classList.remove('show');
+      resultBox.innerHTML = '';
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    async function loadExercise() {
+      try {
+        const response = await fetch('data/cse-module-1-final-exercise.json', { cache: 'no-store' });
+        if (!response.ok) throw new Error('Final exercise could not be loaded.');
+        exercise = await response.json();
+        renderSummary(exercise);
+        renderQuestions(exercise);
+      } catch (error) {
+        questionArea.innerHTML = `<div class="exercise-card"><p>${error.message}</p></div>`;
+      }
+    }
+
+    submitBtn.addEventListener('click', submitExercise);
+    resetBtn.addEventListener('click', resetExercise);
+    loadExercise();
+  </script>
+</body>
+</html>
