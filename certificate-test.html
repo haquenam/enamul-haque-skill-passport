@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Certificate Test Helper | Enamul Haque Skill Passport</title>
+  <link rel="icon" href="assets/ehsp-logo.png" type="image/png" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .test-shell{width:min(760px,calc(100% - 2rem));margin:auto;padding:clamp(2rem,5vw,4rem) 0}.test-panel{padding:clamp(1.2rem,3vw,2rem);border:1px solid var(--line);border-radius:1.5rem;background:rgba(255,255,255,.95);box-shadow:0 18px 45px rgba(20,33,61,.10)}.test-panel h1{font-size:clamp(2rem,5vw,3.4rem);line-height:1;margin:.7rem 0}.test-panel p{color:var(--muted);line-height:1.7}.form{display:grid;gap:1rem;margin-top:1.2rem}.field{display:grid;gap:.4rem}.field label{font-weight:800;color:var(--ink)}.field input,.field select{width:100%;padding:.85rem .95rem;border:1px solid var(--line);border-radius:.85rem;background:#fff;color:var(--ink);font:inherit}.note{margin-top:1rem;padding:1rem;border-left:5px solid var(--gold);border-radius:.9rem;background:#fffaf2;color:var(--muted);line-height:1.65}.actions{display:flex;gap:.75rem;flex-wrap:wrap;margin-top:1rem}
+  </style>
+</head>
+<body>
+  <header class="site-header"><a class="brand" href="index.html" aria-label="Enamul Haque Skill Passport home"><img src="assets/ehsp-logo.png" alt="Enamul Haque Skill Passport logo" style="width:3.2rem;height:3.2rem;border-radius:50%;object-fit:cover;box-shadow:0 12px 30px rgba(27,77,137,.20);background:#fff;"/><span><strong>Enamul Haque Skill Passport</strong><small>Certificate test helper</small></span></a></header>
+  <main class="test-shell">
+    <section class="test-panel">
+      <span class="eyebrow">Internal Test Helper</span>
+      <h1>Generate Test Certificate</h1>
+      <p>This page is only for testing the certificate design and data flow. It creates local browser test data and then opens the certificate page. It is not linked from the public learner journey.</p>
+      <form class="form" id="testForm">
+        <div class="field"><label for="fullName">Learner name</label><input id="fullName" value="Sample Learner Name" required /></div>
+        <div class="field"><label for="email">Email</label><input id="email" type="email" value="learner@example.com" required /></div>
+        <div class="field"><label for="score">Passing score</label><select id="score"><option value="35">35 out of 50</option><option value="41" selected>41 out of 50</option><option value="48">48 out of 50</option><option value="50">50 out of 50</option></select></div>
+        <div class="actions"><button class="button primary" type="submit">Create Test Certificate</button><button class="button secondary" type="button" id="clearBtn">Clear Test Data</button></div>
+      </form>
+      <div class="note"><strong>Testing note:</strong> This works only in your current browser. It writes sample registration, result and certificate data into local storage.</div>
+    </section>
+  </main>
+  <script>
+    const form=document.getElementById('testForm');const clearBtn=document.getElementById('clearBtn');
+    function datePart(){return new Date().toISOString().slice(0,10).replaceAll('-','')}
+    form.addEventListener('submit',event=>{event.preventDefault();const fullName=document.getElementById('fullName').value.trim();const email=document.getElementById('email').value.trim();const score=Number(document.getElementById('score').value);const ref='EHSP-CSE1-'+datePart()+'-TEST01';localStorage.setItem('ehsp_cse_module_1_registration',JSON.stringify({registrationRef:ref,courseId:'cse-non-cse',moduleId:'module-1',assessment:'test-certificate-registration',fullName,email,country:'Test',readinessScore:'15',registeredAt:new Date().toISOString()}));localStorage.setItem('ehsp_cse_module_1_result',JSON.stringify({courseId:'cse-non-cse',moduleId:'module-1',registrationRef:ref,fullName,email,score,total:50,pass:true,attempt:1,submittedAt:new Date().toISOString()}));localStorage.removeItem('ehsp_cse_module_1_certificate');window.location.href='certificate.html?v=testcert'});
+    clearBtn.addEventListener('click',()=>{['ehsp_cse_module_1_registration','ehsp_cse_module_1_result','ehsp_cse_module_1_certificate','ehsp_cse_module_1_attempts'].forEach(key=>localStorage.removeItem(key));alert('Local test data cleared.');});
+  </script>
+</body>
+</html>
