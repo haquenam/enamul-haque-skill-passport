@@ -10,36 +10,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Bengali:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
   <style>
-    .exam-shell { width: min(1060px, calc(100% - 2rem)); margin: auto; padding: clamp(2rem, 5vw, 4rem) 0; }
-    .exam-panel, .question-card, .result-box { padding: clamp(1.1rem, 3vw, 1.7rem); border: 1px solid var(--line); border-radius: 1.4rem; background: rgba(255,255,255,.95); box-shadow: 0 16px 40px rgba(20,33,61,.09); }
-    .exam-panel h1 { font-size: clamp(2.1rem,5vw,3.8rem); line-height: 1; margin: .7rem 0; letter-spacing: -.05em; }
-    .exam-panel p, .question-card p { color: var(--muted); }
-    .exam-meta { display: grid; grid-template-columns: repeat(4,1fr); gap: .75rem; margin-top: 1rem; }
-    .meta-card { padding: .9rem; border: 1px solid var(--line); border-radius: 1rem; background: #fffaf2; }
-    .meta-card strong { display: block; font-size: 1.4rem; color: var(--ink); }
-    .meta-card span { font-size: .82rem; font-weight: 800; color: var(--muted); }
-    .timer { font-weight: 900; color: #8a1f1f; }
-    .policy-note { margin-top: 1rem; padding: 1rem; border-left: 5px solid var(--gold); border-radius: .9rem; background: #fffaf2; color: var(--muted); line-height: 1.65; }
-    .question-area { display: grid; gap: 1rem; margin-top: 1rem; }
-    .question-card h3 { font-family: "Noto Sans Bengali", "Inter", sans-serif; line-height: 1.65; }
-    .options { list-style: none; padding: 0; margin: 0; display: grid; gap: .55rem; }
-    .options label { display: flex; gap: .65rem; padding: .75rem; border: 1px solid var(--line); border-radius: .85rem; color: var(--muted); font-family: "Noto Sans Bengali", "Inter", sans-serif; line-height: 1.55; cursor: pointer; }
-    .result-box { display: none; margin-top: 1rem; border-left: 6px solid var(--gold); }
-    .result-box.show { display: block; }
-    .actions { display: flex; gap: .75rem; flex-wrap: wrap; margin-top: 1rem; }
-    .locked { opacity: .72; pointer-events: none; }
-    .bn { font-family: "Noto Sans Bengali", "Inter", sans-serif; }
-    @media(max-width:760px) { .exam-meta { grid-template-columns: 1fr; } }
+    .exam-shell{width:min(1060px,calc(100% - 2rem));margin:auto;padding:clamp(2rem,5vw,4rem) 0}.exam-panel,.question-card,.result-box{padding:clamp(1.1rem,3vw,1.7rem);border:1px solid var(--line);border-radius:1.4rem;background:rgba(255,255,255,.95);box-shadow:0 16px 40px rgba(20,33,61,.09)}.exam-panel h1{font-size:clamp(2.1rem,5vw,3.8rem);line-height:1;margin:.7rem 0;letter-spacing:-.05em}.exam-panel p,.question-card p{color:var(--muted)}.exam-meta{display:grid;grid-template-columns:repeat(4,1fr);gap:.75rem;margin-top:1rem}.meta-card{padding:.9rem;border:1px solid var(--line);border-radius:1rem;background:#fffaf2}.meta-card strong{display:block;font-size:1.4rem;color:var(--ink)}.meta-card span{font-size:.82rem;font-weight:800;color:var(--muted)}.timer{font-weight:900;color:#8a1f1f}.policy-note{margin-top:1rem;padding:1rem;border-left:5px solid var(--gold);border-radius:.9rem;background:#fffaf2;color:var(--muted);line-height:1.65}.question-area{display:grid;gap:1rem;margin-top:1rem}.question-card h3{font-family:"Noto Sans Bengali","Inter",sans-serif;line-height:1.65}.options{list-style:none;padding:0;margin:0;display:grid;gap:.55rem}.options label{display:flex;gap:.65rem;padding:.75rem;border:1px solid var(--line);border-radius:.85rem;color:var(--muted);font-family:"Noto Sans Bengali","Inter",sans-serif;line-height:1.55;cursor:pointer}.result-box{display:none;margin-top:1rem;border-left:6px solid var(--gold)}.result-box.show{display:block}.actions{display:flex;gap:.75rem;flex-wrap:wrap;margin-top:1rem}.locked{opacity:.72;pointer-events:none}.bn{font-family:"Noto Sans Bengali","Inter",sans-serif}@media(max-width:760px){.exam-meta{grid-template-columns:1fr}}
   </style>
 </head>
 <body>
-  <header class="site-header">
-    <a class="brand" href="index.html">
-      <img src="assets/ehsp-logo.png" alt="Enamul Haque Skill Passport logo" style="width:3.2rem;height:3.2rem;border-radius:50%;object-fit:cover;box-shadow:0 12px 30px rgba(27,77,137,.20);background:#fff;" />
-      <span><strong>Enamul Haque Skill Passport</strong><small>এনামুল হক স্কিল পাসপোর্ট</small></span>
-    </a>
-    <nav class="nav-links"><a href="index.html">Home</a><a href="cse-module-1.html">Module 1</a><a href="cse-module-1-register.html">Registration</a></nav>
-  </header>
+  <header class="site-header"><a class="brand" href="index.html"><img src="assets/ehsp-logo.png" alt="Enamul Haque Skill Passport logo" style="width:3.2rem;height:3.2rem;border-radius:50%;object-fit:cover;box-shadow:0 12px 30px rgba(27,77,137,.20);background:#fff;" /><span><strong>Enamul Haque Skill Passport</strong><small>এনামুল হক স্কিল পাসপোর্ট</small></span></a><nav class="nav-links"><a href="index.html">Home</a><a href="cse-module-1.html">Module 1</a><a href="cse-module-1-register.html">Registration</a></nav></header>
   <main class="exam-shell">
     <section class="exam-panel">
       <span class="eyebrow">Timed Certificate Assessment</span>
@@ -56,13 +31,18 @@
   <footer class="site-footer"><p>© 2026 Enamul Haque Skill Passport. An open learning recognition initiative by Enamul Haque.</p><p class="bn">© ২০২৬ এনামুল হক স্কিল পাসপোর্ট। এনামুল হকের ওপেন লার্নিং রিকগনিশন উদ্যোগ।</p></footer>
   <script>
     const timerEl=document.getElementById('timer'),startBtn=document.getElementById('startBtn'),submitBtn=document.getElementById('submitBtn'),questionArea=document.getElementById('questionArea'),resultBox=document.getElementById('resultBox');
-    let questions=[],remaining=3600,timer=null,started=false;
+    let questions=[],remaining=3600,timer=null,started=false,submitted=false;
+    const reg=JSON.parse(localStorage.getItem('ehsp_cse_module_1_registration')||'null');
+    const previous=JSON.parse(localStorage.getItem('ehsp_cse_module_1_result')||'null');
+    const attempts=Number(localStorage.getItem('ehsp_cse_module_1_attempts')||'0');
     function fmt(s){const m=Math.floor(s/60),r=s%60;return String(m).padStart(2,'0')+':'+String(r).padStart(2,'0')}
+    function showBox(html){resultBox.classList.add('show');resultBox.innerHTML=html;resultBox.scrollIntoView({behavior:'smooth',block:'center'});}
+    function checkInitialState(){if(!reg){showBox('<h2>Registration required</h2><p>Please register before starting the timed assessment.</p><div class="actions"><a class="button primary" href="cse-module-1-register.html">Go To Registration</a></div>');startBtn.disabled=true;return}if(previous&&previous.pass){showBox('<h2>Certificate ready</h2><p>You have already passed this assessment with <strong>'+previous.score+' out of '+previous.total+'</strong>.</p><div class="actions"><a class="button primary" href="certificate.html">Generate Certificate</a></div>');startBtn.disabled=true;return}if(attempts>=2){showBox('<h2>Attempt limit reached</h2><p>You have used the maximum two final assessment attempts. Please review the learning materials before requesting a manual reset.</p>');startBtn.disabled=true;}}
     async function loadQuestions(){const response=await fetch('data/cse-module-1-questions.json',{cache:'no-store'});const data=await response.json();questions=data.questions;}
     function render(){questionArea.innerHTML=questions.map((x,i)=>'<article class="question-card"><span class="eyebrow">Question '+(i+1)+'</span><h3>'+x.q+'</h3><ul class="options">'+x.o.map((o,j)=>'<li><label><input type="radio" name="q'+i+'" value="'+j+'"/> <span>'+String.fromCharCode(65+j)+'. '+o+'</span></label></li>').join('')+'</ul></article>').join('')}
-    async function start(){if(started)return;started=true;await loadQuestions();render();startBtn.disabled=true;submitBtn.disabled=false;timer=setInterval(()=>{remaining--;timerEl.textContent=fmt(remaining);if(remaining<=0)submitExam()},1000)}
-    function submitExam(){if(timer)clearInterval(timer);let score=0;questions.forEach((x,i)=>{const s=document.querySelector('input[name="q'+i+'"]:checked');if(s&&Number(s.value)===x.c)score++});const pass=score>=35;questionArea.classList.add('locked');submitBtn.disabled=true;resultBox.classList.add('show');resultBox.innerHTML='<h2>'+(pass?'Passed':'Not passed')+'</h2><p>You scored <strong>'+score+' out of 50</strong>. Pass requirement is <strong>35 out of 50</strong>.</p><p class="bn">আপনার স্কোর <strong>'+score+'/50</strong>। পাস করতে দরকার <strong>35/50</strong>।</p><p>'+(pass?'You are eligible for certificate generation in the next certificate step.':'Please review Module 1. If this was your first final attempt, one retake is allowed. After two unsuccessful attempts, review the learning materials before requesting a manual reset.')+'</p>';resultBox.scrollIntoView({behavior:'smooth',block:'center'})}
-    startBtn.addEventListener('click',start);submitBtn.addEventListener('click',submitExam);
+    async function start(){if(started)return;if(!reg)return;started=true;await loadQuestions();render();startBtn.disabled=true;submitBtn.disabled=false;timer=setInterval(()=>{remaining--;timerEl.textContent=fmt(remaining);if(remaining<=0)submitExam()},1000)}
+    function submitExam(){if(submitted)return;submitted=true;if(timer)clearInterval(timer);let score=0;questions.forEach((x,i)=>{const s=document.querySelector('input[name="q'+i+'"]:checked');if(s&&Number(s.value)===x.c)score++});const pass=score>=35;const newAttempts=attempts+1;localStorage.setItem('ehsp_cse_module_1_attempts',String(newAttempts));const result={courseId:'cse-non-cse',moduleId:'module-1',registrationRef:reg.registrationRef,fullName:reg.fullName,email:reg.email,score,total:questions.length,pass,attempt:newAttempts,submittedAt:new Date().toISOString()};localStorage.setItem('ehsp_cse_module_1_result',JSON.stringify(result));if(!pass)localStorage.removeItem('ehsp_cse_module_1_certificate');questionArea.classList.add('locked');submitBtn.disabled=true;const passHtml='<h2>Passed</h2><p>You scored <strong>'+score+' out of '+questions.length+'</strong>. Pass requirement is <strong>35 out of 50</strong>.</p><p>You are eligible for certificate generation.</p><div class="actions"><a class="button primary" href="certificate.html">Generate Certificate</a><a class="button secondary" href="cse-module-1.html">Back To Module 1</a></div>';const failHtml='<h2>Not passed</h2><p>You scored <strong>'+score+' out of '+questions.length+'</strong>. Pass requirement is <strong>35 out of 50</strong>.</p><p>'+(newAttempts<2?'You have one retake left. Please review Module 1 before trying again.':'You have used two final attempts. Please review the learning materials before requesting a manual reset.')+'</p>';showBox(pass?passHtml:failHtml)}
+    startBtn.addEventListener('click',start);submitBtn.addEventListener('click',submitExam);checkInitialState();
   </script>
 </body>
 </html>
