@@ -16,21 +16,23 @@
     <section class="test-panel">
       <span class="eyebrow">Internal Test Helper</span>
       <h1>Generate Test Certificate</h1>
-      <p>This page is only for testing the certificate design and data flow. It creates local browser test data and then opens the certificate page. It is not linked from the public learner journey.</p>
+      <p>This page is only for testing the certificate design, registry submission and data flow. It creates fresh local browser test data and then opens the certificate page.</p>
       <form class="form" id="testForm">
         <div class="field"><label for="fullName">Learner name</label><input id="fullName" value="Sample Learner Name" required /></div>
         <div class="field"><label for="email">Email</label><input id="email" type="email" value="learner@example.com" required /></div>
         <div class="field"><label for="score">Passing score</label><select id="score"><option value="35">35 out of 50</option><option value="41" selected>41 out of 50</option><option value="48">48 out of 50</option><option value="50">50 out of 50</option></select></div>
-        <div class="actions"><button class="button primary" type="submit">Create Test Certificate</button><button class="button secondary" type="button" id="clearBtn">Clear Test Data</button></div>
+        <div class="actions"><button class="button primary" type="submit">Create Fresh Test Certificate</button><button class="button secondary" type="button" id="clearBtn">Clear Test Data</button></div>
       </form>
-      <div class="note"><strong>Testing note:</strong> This works only in your current browser. It writes sample registration, result and certificate data into local storage.</div>
+      <div class="note"><strong>Testing note:</strong> Each test now creates a fresh certificate ID so the Google Sheet registry can receive a new row.</div>
     </section>
   </main>
   <script>
     const form=document.getElementById('testForm');const clearBtn=document.getElementById('clearBtn');
     function datePart(){return new Date().toISOString().slice(0,10).replaceAll('-','')}
-    form.addEventListener('submit',event=>{event.preventDefault();const fullName=document.getElementById('fullName').value.trim();const email=document.getElementById('email').value.trim();const score=Number(document.getElementById('score').value);const ref='EHSP-CSE1-'+datePart()+'-TEST01';localStorage.setItem('ehsp_cse_module_1_registration',JSON.stringify({registrationRef:ref,courseId:'cse-non-cse',moduleId:'module-1',assessment:'test-certificate-registration',fullName,email,country:'Test',readinessScore:'15',registeredAt:new Date().toISOString()}));localStorage.setItem('ehsp_cse_module_1_result',JSON.stringify({courseId:'cse-non-cse',moduleId:'module-1',registrationRef:ref,fullName,email,score,total:50,pass:true,attempt:1,submittedAt:new Date().toISOString()}));localStorage.removeItem('ehsp_cse_module_1_certificate');window.location.href='certificate.html?v=testcert'});
-    clearBtn.addEventListener('click',()=>{['ehsp_cse_module_1_registration','ehsp_cse_module_1_result','ehsp_cse_module_1_certificate','ehsp_cse_module_1_attempts'].forEach(key=>localStorage.removeItem(key));alert('Local test data cleared.');});
+    function freshSuffix(){return Math.random().toString(36).slice(2,8).toUpperCase()}
+    function clearKnownData(){Object.keys(localStorage).filter(key=>key.startsWith('ehsp_cse_module_1_')).forEach(key=>localStorage.removeItem(key));}
+    form.addEventListener('submit',event=>{event.preventDefault();clearKnownData();const fullName=document.getElementById('fullName').value.trim();const email=document.getElementById('email').value.trim();const score=Number(document.getElementById('score').value);const suffix=freshSuffix();const ref='EHSP-CSE1-'+datePart()+'-'+suffix;localStorage.setItem('ehsp_cse_module_1_registration',JSON.stringify({registrationRef:ref,courseId:'cse-non-cse',moduleId:'module-1',assessment:'test-certificate-registration',fullName,email,country:'Test',readinessScore:'15',registeredAt:new Date().toISOString()}));localStorage.setItem('ehsp_cse_module_1_result',JSON.stringify({courseId:'cse-non-cse',moduleId:'module-1',registrationRef:ref,fullName,email,score,total:50,pass:true,attempt:1,submittedAt:new Date().toISOString()}));window.location.href='certificate.html?v=registry-test-'+Date.now()});
+    clearBtn.addEventListener('click',()=>{clearKnownData();alert('Local test data cleared.');});
   </script>
 </body>
 </html>
