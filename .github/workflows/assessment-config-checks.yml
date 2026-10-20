@@ -1,0 +1,18 @@
+name: EHSP assessment catalogue validation
+on:
+  push:
+    paths: ["assessments/**", "src/**", "scripts/**", "tests/**", "package.json", ".github/workflows/assessment-config-checks.yml"]
+  pull_request:
+    paths: ["assessments/**", "src/**", "scripts/**", "tests/**", "package.json", ".github/workflows/assessment-config-checks.yml"]
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - run: npm run validate:config
+      - run: npm test
