@@ -3,7 +3,7 @@
   "moduleId": "module-2",
   "title": "CSE For Non CSE Students: Unit 2 Data and Analysis (ICT)",
   "version": "0.1.0",
-  "status": "draft-review-not-live",
+  "status": "author-approved-not-live",
   "createdDate": "2026-10-20",
   "assessmentPolicy": {
     "questionsPerAttempt": 20,
@@ -786,5 +786,7 @@
         "review": "reviewed"
       }
     }
-  ]
+  ],
+  "approvedDate": "2026-10-20",
+  "approvalNote": "Question content approved by course author. Early ICT source texts were not independently retrievable; final pre-release reference verification remains recommended."
 }
