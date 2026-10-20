@@ -1,0 +1,13 @@
+{
+  "name": "ehsp-universal-assessment-engine",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "validate:config": "node scripts/validate-assessment-config.mjs",
+    "test": "node --test tests/*.test.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
