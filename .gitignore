@@ -1,0 +1,13 @@
+# EHSP: protect local OAuth configuration and private backend material.
+.clasprc.json
+.clasp.json
+**/.clasprc.json
+**/.clasp.json
+.env
+.env.*
+!.env.example
+*.pem
+*.p12
+*.pfx
+/backend-private/
+/private-source-exports/
