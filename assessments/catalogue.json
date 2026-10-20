@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "purpose": "Development-only public catalogue. No answer keys, learners, credentials or production deployment.",
+  "courses": [
+    {
+      "id": "cse-non-cse",
+      "title": "CSE for Non-CSE Students",
+      "model": "unit",
+      "status": "IN_PROGRESS",
+      "learningUrl": "https://haquenam.gitbook.io/learningwithenam/cse"
+    },
+    {
+      "id": "ai-integrator",
+      "title": "AI Integrator",
+      "model": "course",
+      "status": "PLANNED",
+      "learningUrl": null
+    },
+    {
+      "id": "cybersecurity-101",
+      "title": "Cybersecurity 101",
+      "model": "course",
+      "status": "PLANNED",
+      "learningUrl": null
+    },
+    {
+      "id": "data-science-fundamentals",
+      "title": "Data Science Fundamentals",
+      "model": "course",
+      "status": "PLANNED",
+      "learningUrl": null
+    },
+    {
+      "id": "power-bi",
+      "title": "Power BI",
+      "model": "course",
+      "status": "PLANNED",
+      "learningUrl": null
+    }
+  ],
+  "assessments": [
+    {
+      "id": "cse-module-2",
+      "courseId": "cse-non-cse",
+      "unitId": "module-2",
+      "title": "Unit 2 — Data and Analysis (ICT)",
+      "model": "unit",
+      "releaseStatus": "SETUP_ONLY",
+      "questionBankStatus": "PRIVATE_DRAFT_INACTIVE_REVIEW_REQUIRED",
+      "bankSize": 40,
+      "questionCount": 20,
+      "durationMinutes": 25,
+      "passPercentage": 75,
+      "passScore": 15,
+      "maxAttempts": 2,
+      "authSessionMinutes": 240,
+      "topicQuotas": {
+        "ict": 2,
+        "data-info": 2,
+        "collection-viz": 4,
+        "binary": 3,
+        "unicode": 2,
+        "database-sql": 4,
+        "encoding": 3
+      },
+      "certificateTitle": "Unit 2 — Data and Analysis (ICT)",
+      "certificateIdPrefix": "EHSP-CSE2"
+    }
+  ]
+}
