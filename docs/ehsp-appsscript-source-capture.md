@@ -19,7 +19,7 @@ npx.cmd --yes @google/clasp@latest clone-script "YOUR_SCRIPT_ID"
 
 These actions retrieve source; they do not publish or overwrite the existing Apps Script project. **Do not run `clasp push` or deploy against the current instance.**
 
-3. Package only the recovered `.gs`, `.html` and `appsscript.json` files. Explicitly exclude `.clasprc.json`, `.clasp.json` and any OAuth token files. Check source for hard-coded passwords, tokens and client secrets before sharing.
+3. Package only the recovered `.js`, `.gs`, `.html` and `appsscript.json` files. `clasp` normally saves Apps Script server code locally as `.js`, even where the online editor displays `.gs`. The initial PowerShell helper incorrectly checked only for `.gs`; that is a packaging error, not a clone failure. Explicitly exclude `.clasprc.json`, `.clasp.json` and any OAuth token files. Check source for hard-coded passwords, tokens and client secrets before sharing.
 4. Supply the inspected source through a private review channel such as the existing ChatGPT project conversation. Do not commit it to this public repository.
 
 A Windows export helper has been prepared separately for the project owner to perform the clone, package only permitted source files and save a ZIP locally.
@@ -33,3 +33,9 @@ A Windows export helper has been prepared separately for the project owner to pe
 
 ## Security note
 The original Unit 2 source may contain protected implementation details. GitHub PR #4 also exposes the earlier answer bank; those answers must not become the production exam bank without replacement and academic approval.
+
+## Confirmed owner export, 20 October 2026
+
+- Google authentication completed and `clasp clone-script` reported 11 files: ten `.js` code files and `appsscript.json`.
+- The original export helper stopped after cloning because it mistakenly expected `.gs` files. The cloned folder was preserved.
+- Recovery: package the already-cloned `.js` files and `appsscript.json` into a ZIP; do not log in or clone again. Source ZIP review is pending.
