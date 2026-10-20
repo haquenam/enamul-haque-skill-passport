@@ -11,8 +11,10 @@ Last evidence review: 20 October 2026. Status: DEVELOPMENT; nothing authorised f
 - [x] CI configuration and tests passed on the development branch.
 
 ## Critical path / next steps
-- [ ] **BLOCKED: One-time retrieve the existing ten-file Apps Script source.** The Google Drive connection lists the workbook but does not expose the bound script source. Obtain it securely, preferably with `clasp pull`. Do not paste authentication secrets or question answers into the public repository.
-- [ ] Build reusable configuration loading on the existing tested Apps Script code. Preserve the existing Unit 2 logic, adapt rather than rewrite.
+- [x] **One-time source retrieval completed.** Owner used read-only `clasp` clone and uploaded ten `.js` modules plus manifest; reviewed privately. No source or question data copied into public GitHub.
+- [x] Extracted configurable pure exam selection/scoring (`src/exam-core.mjs`) with seven synthetic tests and CI checks.
+- [ ] **NEXT DEPENDENCY: Secure source control for existing private Apps Script modules.** Private repository or equivalent restricted workspace needed before automating Apps Script deployment.
+- [ ] Build secure configuration bridge and private Apps Script deployment adapter around the recovered tested functions; do not upload real answer keys to GitHub.
 - [ ] Complete one secure learner-facing HtmlService examination flow with server-authoritative scoring, timing and attempts.
 - [ ] Implement locked, idempotent certificate issuance and read-only public verification for new engine credentials.
 - [ ] Complete endpoint, concurrent-access, failure-recovery, privacy and academic question review tests.
