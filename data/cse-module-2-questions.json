@@ -1,0 +1,790 @@
+{
+  "courseId": "cse-non-cse",
+  "moduleId": "module-2",
+  "title": "CSE For Non CSE Students: Unit 2 Data and Analysis (ICT)",
+  "version": "0.1.0",
+  "status": "draft-review-not-live",
+  "createdDate": "2026-10-20",
+  "assessmentPolicy": {
+    "questionsPerAttempt": 20,
+    "timeLimitMinutes": 25,
+    "passPercent": 75,
+    "passScore": 15,
+    "maxFinalAttempts": 2,
+    "allowMockPractice": true
+  },
+  "selectionBlueprint": {
+    "ict": 2,
+    "data-info": 2,
+    "collection-viz": 4,
+    "binary": 3,
+    "unicode": 2,
+    "database-sql": 4,
+    "encoding": 3
+  },
+  "questionBankSize": 40,
+  "questionDataNotice": "DRAFT and not linked to a live exam. This public repository exposes answer keys. Before issuing verifiable credentials, validate scoring and certificate issuance in a trusted server-side component.",
+  "sourceLimitations": "GitBook text for ICT lesson pages 2-5 was not retrievable during drafting. Items flagged source.review=title-and-overview-only require direct author review against those pages.",
+  "questions": [
+    {
+      "id": "CSE2-Q001",
+      "topic": "ict",
+      "difficulty": "easy",
+      "question": "কোনো প্রতিষ্ঠান কাগজের রেকর্ডের পরিবর্তে ডিজিটালভাবে তথ্য সংরক্ষণ শুরু করলে প্রধান সুবিধা কী?",
+      "options": [
+        "সব তথ্য স্বয়ংক্রিয়ভাবে সঠিক হয়ে যায়",
+        "তথ্য বিশ্লেষণ ছাড়াই সব সিদ্ধান্ত নেওয়া যায়",
+        "তথ্য দ্রুত খুঁজে পাওয়া ও কাজে লাগানো সহজ হয়",
+        "তথ্য সংগ্রহের প্রয়োজন একেবারে শেষ হয়"
+      ],
+      "correctOptionIndex": 2,
+      "explanation": "ডিজিটালভাবে সাজানো তথ্য অনুসন্ধান, ভাগাভাগি ও বিশ্লেষণকে সহজ করে।",
+      "source": {
+        "url": "https://haquenam.gitbook.io/learningwithenam/cse/cse4ncseunit2/unit2video1",
+        "title": "ইউনিট ২ এর রূপরেখা এবং ব্যবহারিক গাইডলাইন",
+        "review": "reviewed"
+      }
+    },
+    {
+      "id": "CSE2-Q002",
+      "topic": "ict",
+      "difficulty": "medium",
+      "question": "ইন্টারনেট ও ডিজিটাল যোগাযোগের বিস্তার কোন পরিবর্তনটি সবচেয়ে সরাসরি এনেছে?",
+      "options": [
+        "ডেটা সুরক্ষার প্রয়োজন শেষ হওয়া",
+        "দূরে থাকা মানুষের মধ্যে দ্রুত তথ্য আদান-প্রদান",
+        "সব জায়গায় যোগাযোগের খরচ সমান হয়ে যাওয়া",
+        "সব প্রতিষ্ঠানে একই সফটওয়্যার ব্যবহার বাধ্যতামূলক হওয়া"
+      ],
+      "correctOptionIndex": 1,
+      "explanation": "তথ্যপ্রযুক্তির অগ্রগতিতে দূরবর্তী যোগাযোগ ও তথ্য বিনিময় দ্রুত হয়েছে।",
+      "source": {
+        "url": "https://haquenam.gitbook.io/learningwithenam/cse/cse4ncseunit2/unit2video2",
+        "title": "তথ্যপ্রযুক্তির বিপ্লব এবং এর প্রভাব",
+        "review": "title-and-overview-only"
+      }
+    },
+    {
+      "id": "CSE2-Q003",
+      "topic": "ict",
+      "difficulty": "medium",
+      "question": "আগের সময়ের কাগজের রিপোর্টের তুলনায় ডিজিটাল তথ্য ব্যবস্থার বড় পার্থক্য কোনটি?",
+      "options": [
+        "সব তথ্য কেবল ছবি হিসেবে রাখতে হয়",
+        "তথ্যকে আর যাচাই করতে হয় না",
+        "একই তথ্য দ্রুত আপডেট, বিশ্লেষণ ও শেয়ার করা যায়",
+        "একবার সংরক্ষণ করলে তথ্য কখনো বদলানো যায় না"
+      ],
+      "correctOptionIndex": 2,
+      "explanation": "ডিজিটাল তথ্য সহজে হালনাগাদ ও বিশ্লেষণযোগ্য।",
+      "source": {
+        "url": "https://haquenam.gitbook.io/learningwithenam/cse/cse4ncseunit2/unit2video3",
+        "title": "তথ্যযুগের তিনকাল বোঝা",
+        "review": "title-and-overview-only"
+      }
+    },
+    {
+      "id": "CSE2-Q004",
+      "topic": "ict",
+      "difficulty": "medium",
+      "question": "একটি হাসপাতাল অ্যাপয়েন্টমেন্ট, রোগীর তথ্য ও এসএমএস আপডেট একই সিস্টেমে ব্যবহার করছে। এটি কীসের উদাহরণ?",
+      "options": [
+        "কম্পিউটার ছাড়া তথ্য সংরক্ষণ",
+        "শুধু কাগজভিত্তিক ফাইল ব্যবস্থাপনা",
+        "তথ্য, কম্পিউটিং ও যোগাযোগ প্রযুক্তির সমন্বয়",
+        "কেবল ছবি সম্পাদনার সফটওয়্যার"
+      ],
+      "correctOptionIndex": 2,
+      "explanation": "এখানে তথ্য পরিচালনা ও যোগাযোগ একসঙ্গে কাজ করছে।",
+      "source": {
+        "url": "https://haquenam.gitbook.io/learningwithenam/cse/cse4ncseunit2/unit2video4",
+        "title": "উপাত্ত, তথ্য এবং যোগাযোগ প্রযুক্তির (ICT) ক্রমবিকাশ",
+        "review": "title-and-overview-only"
+      }
+    },
+    {
+      "id": "CSE2-Q005",
+      "topic": "data-info",
+      "difficulty": "easy",
+      "question": "একটি জরিপে পাওয়া আলাদা আলাদা উত্তরগুলো বিশ্লেষণের আগে সাধারণত কী হিসেবে বিবেচিত হয়?",
+      "options": [
+        "সম্পূর্ণ সিদ্ধান্ত",
+        "কাঁচা ডেটা",
+        "ভিজ্যুয়াল চার্ট",
+        "চূড়ান্ত প্রতিবেদন"
+      ],
+      "correctOptionIndex": 1,
+      "explanation": "সংগ্রহ করা উত্তরগুলো বিশ্লেষণের আগের কাঁচা ডেটা।",
+      "source": {
+        "url": "https://haquenam.gitbook.io/learningwithenam/cse/cse4ncseunit2/unit2video1",
+        "title": "ইউনিট ২ এর রূপরেখা এবং ব্যবহারিক গাইডলাইন",
+        "review": "reviewed"
+      }
+    },
+    {
+      "id": "CSE2-Q006",
+      "topic": "data-info",
+      "difficulty": "medium",
+      "question": "একটি জরিপের ১০০টি উত্তরের মধ্যে ৬০ জন 'হ্যাঁ' বলেছেন। '৬০ শতাংশ হ্যাঁ বলেছেন'—এটি কী?",
+      "options": [
+        "নতুন কোনো জরিপ প্রশ্ন",
+        "অপরীক্ষিত কাঁচা টেক্সট",
+        "ডেটাবেজের পাসওয়ার্ড",
+        "প্রসেস করা তথ্য বা ইনফরমেশন"
+      ],
+      "correctOptionIndex": 3,
+      "explanation": "গণনা ও বিশ্লেষণের পর কাঁচা উত্তর অর্থবহ তথ্যে পরিণত হয়।",
+      "source": {
+        "url": "https://haquenam.gitbook.io/learningwithenam/cse/cse4ncseunit2/unit2video1",
+        "title": "ইউনিট ২ এর রূপরেখা এবং ব্যবহারিক গাইডলাইন",
+        "review": "reviewed"
+      }
+    },
+    {
+      "id": "CSE2-Q007",
+      "topic": "data-info",
+      "difficulty": "medium",
+      "question": "কোন উদাহরণটি স্ট্রাকচার্ড ডেটার সবচেয়ে কাছাকাছি?",
+      "options": [
+        "হাতে লেখা অগোছালো মন্তব্যের ছবি",
+        "বিভিন্ন গ্রাহকের অডিও অভিযোগ",
+        "একটি এলোমেলো ভিডিও সংগ্রহ",
+        "কলামে সাজানো তারিখ, পণ্যের নাম ও বিক্রির পরিমাণ"
+      ],
+      "correctOptionIndex": 3,
+      "explanation": "টেবিলের নির্দিষ্ট ফিল্ডে সাজানো তথ্য স্ট্রাকচার্ড ডেটা।",
+      "source": {
+        "url": "https://haquenam.gitbook.io/learningwithenam/cse/cse4ncseunit2/unit2video1",
+        "title": "ইউনিট ২ এর রূপরেখা এবং ব্যবহারিক গাইডলাইন",
+        "review": "reviewed"
+      }
+    },
+    {
+      "id": "CSE2-Q008",
+      "topic": "data-info",
+      "difficulty": "medium",
+      "question": "শত শত গ্রাহকের মুক্তভাবে লেখা মতামত প্রাথমিকভাবে কোন ধরনের ডেটা?",
+      "options": [
+        "আগেই সাজানো রিলেশনাল টেবিল",
+        "আনস্ট্রাকচার্ড ডেটা",
+        "কেবল বাইনারি সংখ্যা",
+        "SQL কমান্ড"
+      ],
+      "correctOptionIndex": 1,
+      "explanation": "মুক্ত টেক্সট মন্তব্যের নির্দিষ্ট টেবিল কাঠামো নাও থাকতে পারে।",
+      "source": {
+        "url": "https://haquenam.gitbook.io/learningwithenam/cse/cse4ncseunit2/unit2video1",
+        "title": "ইউনিট ২ এর রূপরেখা এবং ব্যবহারিক গাইডলাইন",
+        "review": "reviewed"
+      }
+    },
+    {
+      "id": "CSE2-Q009",
+      "topic": "collection-viz",
+      "difficulty": "easy",
+      "question": "অনেক গ্রাহকের সন্তুষ্টি সম্পর্কে একই ধরনের প্রশ্ন করে উত্তর সংগ্রহের পদ্ধতি কী?",
+      "options": [
+        "বাইনারি রূপান্তর",
+        "সার্ভে",
+        "এনকোডিং",
+        "ডেটাবেজ আপডেট"
+      ],
+      "correctOptionIndex": 1,
+      "explanation": "নির্দিষ্ট প্রশ্ন ব্যবহার করে অনেকের মতামত সংগ্রহ করা সার্ভে।",
+      "source": {
+        "url": "https://haquenam.gitbook.io/learningwithenam/cse/cse4ncseunit2/unit2video6",
+        "title": "তথ্য সংগ্রহ, প্রসেসিং এবং ভিজ্যুয়ালাইজেশন",
+        "review": "reviewed"
+      }
+    },
+    {
+      "id": "CSE2-Q010",
+      "topic": "collection-viz",
+      "difficulty": "easy",
+      "question": "কোনো দোকানে ক্রেতারা কোন তাকের সামনে বেশি থামেন তা সরাসরি দেখে নোট করা কী?",
+      "options": [
+        "ইউনিকোড",
+        "SQL কোয়েরি",
+        "ইমেজ এনকোডিং",
+        "অবজারভেশন"
+      ],
+      "correctOptionIndex": 3,
+      "explanation": "আচরণ সরাসরি পর্যবেক্ষণ করে ডেটা সংগ্রহ করাকে অবজারভেশন বলে।",
+      "source": {
+        "url": "https://haquenam.gitbook.io/learningwithenam/cse/cse4ncseunit2/unit2video6",
+        "title": "তথ্য সংগ্রহ, প্রসেসিং এবং ভিজ্যুয়ালাইজেশন",
+        "review": "reviewed"
+      }
+    },
+    {
+      "id": "CSE2-Q011",
+      "topic": "collection-viz",
+      "difficulty": "medium",
+      "question": "গবেষক একজন বিশেষজ্ঞের কাছ থেকে বিস্তারিত মতামত জানতে সরাসরি প্রশ্ন করছেন। এটি কোন পদ্ধতি?",
+      "options": [
+        "বাইনারি প্রসেসিং",
+        "লাইন চার্ট",
+        "ইন্টারভিউ",
+        "ফাইল কমপ্রেশন"
+      ],
+      "correctOptionIndex": 2,
+      "explanation": "প্রশ্নোত্তরের মাধ্যমে বিস্তারিত তথ্য নেওয়া ইন্টারভিউ।",
+      "source": {
+        "url": "https://haquenam.gitbook.io/learningwithenam/cse/cse4ncseunit2/unit2video6",
+        "title": "তথ্য সংগ্রহ, প্রসেসিং এবং ভিজ্যুয়ালাইজেশন",
+        "review": "reviewed"
+      }
+    },
+    {
+      "id": "CSE2-Q012",
+      "topic": "collection-viz",
+      "difficulty": "medium",
+      "question": "সার্ভের উত্তরে একই ব্যক্তির তথ্য দুবার এসেছে। চার্ট বানানোর আগে সবচেয়ে যুক্তিসঙ্গত কাজ কী?",
+      "options": [
+        "দুটি রেকর্ডকেই আলাদা মানুষ ধরে নেওয়া",
+        "সব উত্তর না দেখে সরাসরি পাই চার্ট বানানো",
+        "ডুপ্লিকেট রেকর্ড যাচাই করে ডেটা পরিষ্কার করা",
+        "সব তথ্য মুছে ফেলা"
+      ],
+      "correctOptionIndex": 2,
+      "explanation": "ভুল বা ডুপ্লিকেট ডেটা বিশ্লেষণের ফলকে বিকৃত করতে পারে।",
+      "source": {
+        "url": "https://haquenam.gitbook.io/learningwithenam/cse/cse4ncseunit2/unit2video6",
+        "title": "তথ্য সংগ্রহ, প্রসেসিং এবং ভিজ্যুয়ালাইজেশন",
+        "review": "reviewed"
+      }
+    },
+    {
+      "id": "CSE2-Q013",
+      "topic": "collection-viz",
+      "difficulty": "easy",
+      "question": "ছয় মাসে বিক্রির পরিমাণ কীভাবে পরিবর্তিত হয়েছে দেখাতে কোন চার্ট বেশি উপযোগী?",
+      "options": [
+        "অক্ষর এনকোডিং",
+        "ডেটাবেজ টেবিলের নাম",
+        "লাইন চার্ট",
+        "পাই চার্ট"
+      ],
+      "correctOptionIndex": 2,
+      "explanation": "সময় ধরে পরিবর্তনের প্রবণতা দেখাতে লাইন চার্ট কার্যকর।",
+      "source": {
+        "url": "https://haquenam.gitbook.io/learningwithenam/cse/cse4ncseunit2/unit2video6",
+        "title": "তথ্য সংগ্রহ, প্রসেসিং এবং ভিজ্যুয়ালাইজেশন",
+        "review": "reviewed"
+      }
+    },
+    {
+      "id": "CSE2-Q014",
+      "topic": "collection-viz",
+      "difficulty": "easy",
+      "question": "চারটি বিভাগের বিক্রি পাশাপাশি তুলনা করতে কোন চার্ট বেশি উপযোগী?",
+      "options": [
+        "শুধু পাই চার্ট",
+        "বার চার্ট",
+        "UTF-8",
+        "বাইনারি কোড"
+      ],
+      "correctOptionIndex": 1,
+      "explanation": "বিভাগভিত্তিক মানের তুলনায় বার চার্ট সুবিধাজনক।",
+      "source": {
+        "url": "https://haquenam.gitbook.io/learningwithenam/cse/cse4ncseunit2/unit2video6",
+        "title": "তথ্য সংগ্রহ, প্রসেসিং এবং ভিজ্যুয়ালাইজেশন",
+        "review": "reviewed"
+      }
+    },
+    {
+      "id": "CSE2-Q015",
+      "topic": "collection-viz",
+      "difficulty": "medium",
+      "question": "একটি বাজেটের খরচ কোন বিভাগে কত অংশ গেছে তা দেখাতে কোন চার্ট ব্যবহার করা যায়?",
+      "options": [
+        "এসকিউএল ইনসার্ট",
+        "পাই চার্ট",
+        "ASCII টেবিল",
+        "কেবল লাইন চার্ট"
+      ],
+      "correctOptionIndex": 1,
+      "explanation": "একটি মোট পরিমাণের বিভিন্ন অংশের অনুপাত পাই চার্টে দেখানো যায়।",
+      "source": {
+        "url": "https://haquenam.gitbook.io/learningwithenam/cse/cse4ncseunit2/unit2video6",
+        "title": "তথ্য সংগ্রহ, প্রসেসিং এবং ভিজ্যুয়ালাইজেশন",
+        "review": "reviewed"
+      }
+    },
+    {
+      "id": "CSE2-Q016",
+      "topic": "collection-viz",
+      "difficulty": "hard",
+      "question": "২০ জন শিক্ষার্থীর স্কোর থেকে কোন বিভাগে কতজন আছে তা দেখানোর আগে কোন কাজটি প্রয়োজন?",
+      "options": [
+        "শুধু সবচেয়ে বেশি স্কোরটি রেখে দেওয়া",
+        "স্কোরগুলো যাচাই করে বিভাগ অনুযায়ী গণনা করা",
+        "ডেটা না দেখে চার্টের রং ঠিক করা",
+        "প্রতিটি স্কোরকে ইমোজিতে বদলে দেওয়া"
+      ],
+      "correctOptionIndex": 1,
+      "explanation": "চার্ট বানানোর আগে ডেটা যাচাই ও শ্রেণিভিত্তিক সারসংক্ষেপ প্রয়োজন।",
+      "source": {
+        "url": "https://haquenam.gitbook.io/learningwithenam/cse/cse4ncseunit2/unit2video6",
+        "title": "তথ্য সংগ্রহ, প্রসেসিং এবং ভিজ্যুয়ালাইজেশন",
+        "review": "reviewed"
+      }
+    },
+    {
+      "id": "CSE2-Q017",
+      "topic": "binary",
+      "difficulty": "easy",
+      "question": "একটি বিটে কতটি সম্ভাব্য মান থাকতে পারে?",
+      "options": [
+        "দুটি: ০ এবং ১",
+        "চারটি: ০ থেকে ৩",
+        "আটটি: ০ থেকে ৭",
+        "দশটি: ০ থেকে ৯"
+      ],
+      "correctOptionIndex": 0,
+      "explanation": "বিট হলো বাইনারি ডিজিট; এর মান ০ বা ১।",
+      "source": {
+        "url": "https://haquenam.gitbook.io/learningwithenam/cse/cse4ncseunit2/undefined",
+        "title": "বিট, বাইট এবং বাইনারি সংখ্যা পদ্ধতি",
+        "review": "reviewed"
+      }
+    },
+    {
+      "id": "CSE2-Q018",
+      "topic": "binary",
+      "difficulty": "easy",
+      "question": "১ বাইটে কত বিট থাকে?",
+      "options": [
+        "২ বিট",
+        "৪ বিট",
+        "১৬ বিট",
+        "৮ বিট"
+      ],
+      "correctOptionIndex": 3,
+      "explanation": "এক বাইট সমান আট বিট।",
+      "source": {
+        "url": "https://haquenam.gitbook.io/learningwithenam/cse/cse4ncseunit2/undefined",
+        "title": "বিট, বাইট এবং বাইনারি সংখ্যা পদ্ধতি",
+        "review": "reviewed"
+      }
+    },
+    {
+      "id": "CSE2-Q019",
+      "topic": "binary",
+      "difficulty": "medium",
+      "question": "বাইনারি 101 সংখ্যাটি দশমিক পদ্ধতিতে কত?",
+      "options": [
+        "৩",
+        "১০",
+        "৬",
+        "৫"
+      ],
+      "correctOptionIndex": 3,
+      "explanation": "101₂ = ১×৪ + ০×২ + ১×১ = ৫।",
+      "source": {
+        "url": "https://haquenam.gitbook.io/learningwithenam/cse/cse4ncseunit2/undefined",
+        "title": "বিট, বাইট এবং বাইনারি সংখ্যা পদ্ধতি",
+        "review": "reviewed"
+      }
+    },
+    {
+      "id": "CSE2-Q020",
+      "topic": "binary",
+      "difficulty": "medium",
+      "question": "কম্পিউটারের বাইনারি সংখ্যাপদ্ধতির ভিত্তি কত?",
+      "options": [
+        "২",
+        "৮",
+        "১৬",
+        "১০"
+      ],
+      "correctOptionIndex": 0,
+      "explanation": "বাইনারিতে দুটি প্রতীক, ০ এবং ১, ব্যবহার করা হয়।",
+      "source": {
+        "url": "https://haquenam.gitbook.io/learningwithenam/cse/cse4ncseunit2/undefined",
+        "title": "বিট, বাইট এবং বাইনারি সংখ্যা পদ্ধতি",
+        "review": "reviewed"
+      }
+    },
+    {
+      "id": "CSE2-Q021",
+      "topic": "binary",
+      "difficulty": "medium",
+      "question": "ASCII-তে বড় হাতের A অক্ষরের বাইনারি প্রকাশ কোনটি?",
+      "options": [
+        "00110000",
+        "11111111",
+        "01000010",
+        "01000001"
+      ],
+      "correctOptionIndex": 3,
+      "explanation": "A-এর ASCII মান ৬৫, যা আট-বিট বাইনারিতে 01000001।",
+      "source": {
+        "url": "https://haquenam.gitbook.io/learningwithenam/cse/cse4ncseunit2/undefined",
+        "title": "বিট, বাইট এবং বাইনারি সংখ্যা পদ্ধতি",
+        "review": "reviewed"
+      }
+    },
+    {
+      "id": "CSE2-Q022",
+      "topic": "binary",
+      "difficulty": "medium",
+      "question": "ইন্টারনেট সংযোগের গতিতে Mbps লেখা থাকলে সাধারণত কী বোঝায়?",
+      "options": [
+        "প্রতি সেকেন্ডে মেগাবিট",
+        "প্রতি মিনিটে মেগাবাইট",
+        "প্রতি সেকেন্ডে মেগাবাইট",
+        "মোট হার্ডডিস্কের সাইজ"
+      ],
+      "correctOptionIndex": 0,
+      "explanation": "Mbps-এর b হলো bit; এটি ডেটা স্থানান্তরের হার বোঝায়।",
+      "source": {
+        "url": "https://haquenam.gitbook.io/learningwithenam/cse/cse4ncseunit2/undefined",
+        "title": "বিট, বাইট এবং বাইনারি সংখ্যা পদ্ধতি",
+        "review": "reviewed"
+      }
+    },
+    {
+      "id": "CSE2-Q023",
+      "topic": "unicode",
+      "difficulty": "easy",
+      "question": "প্রচলিত ASCII-র মূল ক্যারেক্টার সেটে কতটি কোড আছে?",
+      "options": [
+        "১২৮টি",
+        "১,০২৪টি শব্দ",
+        "১৬টি",
+        "২৫৬টি ভাষা"
+      ],
+      "correctOptionIndex": 0,
+      "explanation": "স্ট্যান্ডার্ড ASCII-র মূল সেটে ১২৮টি ক্যারেক্টার কোড আছে।",
+      "source": {
+        "url": "https://haquenam.gitbook.io/learningwithenam/cse/cse4ncseunit2/unit2video7",
+        "title": "ASCII, Unicode এবং ইমোজি",
+        "review": "reviewed"
+      }
+    },
+    {
+      "id": "CSE2-Q024",
+      "topic": "unicode",
+      "difficulty": "medium",
+      "question": "একই ডকুমেন্টে বাংলা, ইংরেজি ও অন্যান্য ভাষার অক্ষর ব্যবহার করতে কোন স্ট্যান্ডার্ড বেশি উপযোগী?",
+      "options": [
+        "ইউনিকোড",
+        "এসকিউএল",
+        "শুধু বাইনারি ০",
+        "শুধু স্ট্যান্ডার্ড ASCII"
+      ],
+      "correctOptionIndex": 0,
+      "explanation": "ইউনিকোড বিভিন্ন ভাষার অক্ষরের জন্য কোড পয়েন্ট নির্ধারণ করে।",
+      "source": {
+        "url": "https://haquenam.gitbook.io/learningwithenam/cse/cse4ncseunit2/unit2video7",
+        "title": "ASCII, Unicode এবং ইমোজি",
+        "review": "reviewed"
+      }
+    },
+    {
+      "id": "CSE2-Q025",
+      "topic": "unicode",
+      "difficulty": "medium",
+      "question": "ইউনিকোডে বাংলা 'ক' অক্ষরের কোড পয়েন্ট কোনটি?",
+      "options": [
+        "U+0020",
+        "U+0030",
+        "U+0995",
+        "U+0041"
+      ],
+      "correctOptionIndex": 2,
+      "explanation": "GitBook পাঠে 'ক' অক্ষরের উদাহরণ U+0995 দেওয়া আছে।",
+      "source": {
+        "url": "https://haquenam.gitbook.io/learningwithenam/cse/cse4ncseunit2/unit2video7",
+        "title": "ASCII, Unicode এবং ইমোজি",
+        "review": "reviewed"
+      }
+    },
+    {
+      "id": "CSE2-Q026",
+      "topic": "unicode",
+      "difficulty": "medium",
+      "question": "ইমোজি বিভিন্ন ডিভাইসে শনাক্ত করার ক্ষেত্রে কোন বিষয়টি গুরুত্বপূর্ণ?",
+      "options": [
+        "একই ফোন কোম্পানি ব্যবহার করা",
+        "একই ফাইলের নাম রাখা",
+        "ইউনিকোড কোড পয়েন্ট",
+        "সবার স্ক্রিনের রং একই হওয়া"
+      ],
+      "correctOptionIndex": 2,
+      "explanation": "ইউনিকোড ইমোজির মতো প্রতীকের পরিচয় নির্ধারণ করে; চেহারা ডিভাইসভেদে ভিন্ন হতে পারে।",
+      "source": {
+        "url": "https://haquenam.gitbook.io/learningwithenam/cse/cse4ncseunit2/unit2video7",
+        "title": "ASCII, Unicode এবং ইমোজি",
+        "review": "reviewed"
+      }
+    },
+    {
+      "id": "CSE2-Q027",
+      "topic": "database-sql",
+      "difficulty": "easy",
+      "question": "ডেটাবেজের একটি টেবিলে একজন গ্রাহকের সম্পূর্ণ তথ্য সাধারণত কী নামে পরিচিত?",
+      "options": [
+        "এসকিউএল ভাষা",
+        "এনকোডিং ফরম্যাট",
+        "ফিল্ড বা কলাম",
+        "রেকর্ড বা রো"
+      ],
+      "correctOptionIndex": 3,
+      "explanation": "একজন গ্রাহকের তথ্য একটি সারি বা রেকর্ডে থাকতে পারে।",
+      "source": {
+        "url": "https://haquenam.gitbook.io/learningwithenam/cse/cse4ncseunit2/unit2video8",
+        "title": "ডেটাবেজ, SQL এবং Access",
+        "review": "reviewed"
+      }
+    },
+    {
+      "id": "CSE2-Q028",
+      "topic": "database-sql",
+      "difficulty": "easy",
+      "question": "একটি গ্রাহক টেবিলের 'Email' কলাম কীসের উদাহরণ?",
+      "options": [
+        "ফিল্ড",
+        "কোয়েরির ফলাফল",
+        "সম্পূর্ণ ডেটাবেজ",
+        "রেকর্ড"
+      ],
+      "correctOptionIndex": 0,
+      "explanation": "টেবিলের কলামকে ফিল্ড বলা হয়।",
+      "source": {
+        "url": "https://haquenam.gitbook.io/learningwithenam/cse/cse4ncseunit2/unit2video8",
+        "title": "ডেটাবেজ, SQL এবং Access",
+        "review": "reviewed"
+      }
+    },
+    {
+      "id": "CSE2-Q029",
+      "topic": "database-sql",
+      "difficulty": "medium",
+      "question": "গত মাসের ক্রেতাদের তালিকা বের করতে ডেটাবেজে সাধারণত কী ব্যবহার করা হয়?",
+      "options": [
+        "কোয়েরি",
+        "অডিও এনকোডিং",
+        "পাই চার্টের রং",
+        "ইমেজ ফিল্টার"
+      ],
+      "correctOptionIndex": 0,
+      "explanation": "কোয়েরির মাধ্যমে নির্দিষ্ট শর্তে তথ্য খোঁজা যায়।",
+      "source": {
+        "url": "https://haquenam.gitbook.io/learningwithenam/cse/cse4ncseunit2/unit2video8",
+        "title": "ডেটাবেজ, SQL এবং Access",
+        "review": "reviewed"
+      }
+    },
+    {
+      "id": "CSE2-Q030",
+      "topic": "database-sql",
+      "difficulty": "medium",
+      "question": "`SELECT * FROM customers;` কমান্ডটি সাধারণত কী করে?",
+      "options": [
+        "টেবিলের সব তথ্য মুছে দেয়",
+        "customers টেবিলের সব কলামের তথ্য দেখায়",
+        "টেবিলের নাম পরিবর্তন করে",
+        "নতুন গ্রাহকের রেকর্ড যুক্ত করে"
+      ],
+      "correctOptionIndex": 1,
+      "explanation": "SELECT ডেটা পড়তে ব্যবহার হয়; * সব কলাম নির্দেশ করে।",
+      "source": {
+        "url": "https://haquenam.gitbook.io/learningwithenam/cse/cse4ncseunit2/unit2video8",
+        "title": "ডেটাবেজ, SQL এবং Access",
+        "review": "reviewed"
+      }
+    },
+    {
+      "id": "CSE2-Q031",
+      "topic": "database-sql",
+      "difficulty": "medium",
+      "question": "টেবিলে নতুন একজন গ্রাহকের তথ্য যুক্ত করতে কোন এসকিউএল কমান্ড ব্যবহৃত হয়?",
+      "options": [
+        "INSERT INTO",
+        "SELECT",
+        "ORDER BY",
+        "UPDATE"
+      ],
+      "correctOptionIndex": 0,
+      "explanation": "নতুন রেকর্ড যুক্ত করতে INSERT INTO ব্যবহার করা হয়।",
+      "source": {
+        "url": "https://haquenam.gitbook.io/learningwithenam/cse/cse4ncseunit2/unit2video8",
+        "title": "ডেটাবেজ, SQL এবং Access",
+        "review": "reviewed"
+      }
+    },
+    {
+      "id": "CSE2-Q032",
+      "topic": "database-sql",
+      "difficulty": "hard",
+      "question": "শুধু একজন নির্দিষ্ট গ্রাহকের ফোন নম্বর পরিবর্তন করতে কোন শর্তটি জরুরি?",
+      "options": [
+        "UPDATE কমান্ডের সঙ্গে উপযুক্ত WHERE শর্ত",
+        "ডেটাবেজকে ছবি হিসেবে রাখা",
+        "সব রেকর্ড DELETE করা",
+        "শুধু SELECT * ব্যবহার"
+      ],
+      "correctOptionIndex": 0,
+      "explanation": "WHERE শর্ত না থাকলে UPDATE একাধিক রেকর্ডে প্রভাব ফেলতে পারে।",
+      "source": {
+        "url": "https://haquenam.gitbook.io/learningwithenam/cse/cse4ncseunit2/unit2video8",
+        "title": "ডেটাবেজ, SQL এবং Access",
+        "review": "reviewed"
+      }
+    },
+    {
+      "id": "CSE2-Q033",
+      "topic": "database-sql",
+      "difficulty": "medium",
+      "question": "নিচের কোনটি রিলেশনাল ডেটাবেজ ব্যবস্থার উদাহরণ?",
+      "options": [
+        "MP3",
+        "PNG",
+        "MySQL",
+        "UTF-8"
+      ],
+      "correctOptionIndex": 2,
+      "explanation": "MySQL রিলেশনাল ডেটাবেজ ম্যানেজমেন্ট সিস্টেম।",
+      "source": {
+        "url": "https://haquenam.gitbook.io/learningwithenam/cse/cse4ncseunit2/unit2video8",
+        "title": "ডেটাবেজ, SQL এবং Access",
+        "review": "reviewed"
+      }
+    },
+    {
+      "id": "CSE2-Q034",
+      "topic": "database-sql",
+      "difficulty": "medium",
+      "question": "ডকুমেন্টভিত্তিক নন-রিলেশনাল ডেটাবেজের উদাহরণ কোনটি?",
+      "options": [
+        "JPEG",
+        "ASCII",
+        "MongoDB",
+        "PowerPoint"
+      ],
+      "correctOptionIndex": 2,
+      "explanation": "MongoDB ডকুমেন্টভিত্তিক ডেটাবেজ হিসেবে পাঠে উল্লেখ আছে।",
+      "source": {
+        "url": "https://haquenam.gitbook.io/learningwithenam/cse/cse4ncseunit2/unit2video8",
+        "title": "ডেটাবেজ, SQL এবং Access",
+        "review": "reviewed"
+      }
+    },
+    {
+      "id": "CSE2-Q035",
+      "topic": "encoding",
+      "difficulty": "easy",
+      "question": "টেক্সট এনকোডিংয়ের মূল কাজ কী?",
+      "options": [
+        "অক্ষরকে নির্দিষ্ট নিয়মে বাইনারি ডেটায় প্রকাশ করা",
+        "সব ডেটা স্বয়ংক্রিয়ভাবে এনক্রিপ্ট করা",
+        "ইন্টারনেটের সংযোগ গতি বাড়ানো",
+        "কম্পিউটারের মেমরি পরিবর্তন করা"
+      ],
+      "correctOptionIndex": 0,
+      "explanation": "এনকোডিংয়ের মাধ্যমে অক্ষর কম্পিউটারের সংরক্ষণযোগ্য বাইটে রূপ নেয়।",
+      "source": {
+        "url": "https://haquenam.gitbook.io/learningwithenam/cse/cse4ncseunit2/unit2video9",
+        "title": "টেক্সট, অডিও, ভিডিও এবং ইমেজ এনকোডিং",
+        "review": "reviewed"
+      }
+    },
+    {
+      "id": "CSE2-Q036",
+      "topic": "encoding",
+      "difficulty": "medium",
+      "question": "পাইথনে `text.encode('utf-8')` সাধারণত কী দেয়?",
+      "options": [
+        "UTF-8 অনুযায়ী এনকোড করা বাইট",
+        "ভিডিও ফাইল",
+        "কেবল একটি ছবি",
+        "একটি SQL টেবিল"
+      ],
+      "correctOptionIndex": 0,
+      "explanation": "পাইথনের encode মেথড টেক্সট থেকে বাইট তৈরি করে।",
+      "source": {
+        "url": "https://haquenam.gitbook.io/learningwithenam/cse/cse4ncseunit2/unit2video9",
+        "title": "টেক্সট, অডিও, ভিডিও এবং ইমেজ এনকোডিং",
+        "review": "reviewed"
+      }
+    },
+    {
+      "id": "CSE2-Q037",
+      "topic": "encoding",
+      "difficulty": "easy",
+      "question": "অডিও সংরক্ষণ বা স্ট্রিমিংয়ের ক্ষেত্রে নিচের কোন ফরম্যাটটি প্রচলিত?",
+      "options": [
+        "MP3",
+        "HTML",
+        "PNG",
+        "CSV"
+      ],
+      "correctOptionIndex": 0,
+      "explanation": "MP3 অডিও ফরম্যাট; পাঠে অডিও এনকোডিংয়ের উদাহরণ হিসেবে আছে।",
+      "source": {
+        "url": "https://haquenam.gitbook.io/learningwithenam/cse/cse4ncseunit2/unit2video9",
+        "title": "টেক্সট, অডিও, ভিডিও এবং ইমেজ এনকোডিং",
+        "review": "reviewed"
+      }
+    },
+    {
+      "id": "CSE2-Q038",
+      "topic": "encoding",
+      "difficulty": "medium",
+      "question": "একটি ভিডিওকে ওয়েবে সহজে শেয়ার করার জন্য কোন ফরম্যাটটি সাধারণত উপযোগী?",
+      "options": [
+        "DOCX",
+        "SQL",
+        "MP4",
+        "TXT"
+      ],
+      "correctOptionIndex": 2,
+      "explanation": "MP4 একটি প্রচলিত ভিডিও কনটেইনার ফরম্যাট এবং পাঠে উদাহরণ হিসেবে ব্যবহৃত।",
+      "source": {
+        "url": "https://haquenam.gitbook.io/learningwithenam/cse/cse4ncseunit2/unit2video9",
+        "title": "টেক্সট, অডিও, ভিডিও এবং ইমেজ এনকোডিং",
+        "review": "reviewed"
+      }
+    },
+    {
+      "id": "CSE2-Q039",
+      "topic": "encoding",
+      "difficulty": "medium",
+      "question": "ছবি সংরক্ষণের জন্য নিচের কোন জোড়াটি প্রাসঙ্গিক?",
+      "options": [
+        "ASCII এবং SELECT",
+        "PNG এবং JPEG",
+        "SQL এবং JSON",
+        "MP3 এবং WAV"
+      ],
+      "correctOptionIndex": 1,
+      "explanation": "PNG ও JPEG ইমেজ ফরম্যাট হিসেবে ব্যবহৃত হয়।",
+      "source": {
+        "url": "https://haquenam.gitbook.io/learningwithenam/cse/cse4ncseunit2/unit2video9",
+        "title": "টেক্সট, অডিও, ভিডিও এবং ইমেজ এনকোডিং",
+        "review": "reviewed"
+      }
+    },
+    {
+      "id": "CSE2-Q040",
+      "topic": "encoding",
+      "difficulty": "hard",
+      "question": "এক সফটওয়্যারে লেখা বাংলা টেক্সট অন্য সফটওয়্যারে ভুলভাবে দেখা যাচ্ছে। কোন সমস্যাটি আগে পরীক্ষা করা যুক্তিসঙ্গত?",
+      "options": [
+        "মনিটরের স্ক্রিনের আকার",
+        "ইন্টারনেট প্যাকেজের দাম",
+        "দুই সফটওয়্যারে টেক্সট এনকোডিংয়ের সামঞ্জস্য",
+        "পাই চার্টের রং"
+      ],
+      "correctOptionIndex": 2,
+      "explanation": "ভিন্ন বা ভুল ডিকোডিং ব্যবহারে বাংলা অক্ষর বিকৃত দেখাতে পারে।",
+      "source": {
+        "url": "https://haquenam.gitbook.io/learningwithenam/cse/cse4ncseunit2/unit2video9",
+        "title": "টেক্সট, অডিও, ভিডিও এবং ইমেজ এনকোডিং",
+        "review": "reviewed"
+      }
+    }
+  ]
+}
