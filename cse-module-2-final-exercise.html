@@ -123,7 +123,7 @@
     localStorage.removeItem(keyActive);active=null;
     questionArea.innerHTML="";startBtn.disabled=true;submitBtn.disabled=true;started=false;
     const actions='<div class="actions"><a class="button secondary" href="cse-module-2.html">Back to Unit 2</a></div>';
-    if(result.pass){showBox("Pass: "+score+"/20","You have met the 75% mark. This test stores a provisional browser result; an official certificate is not issued until secure scoring and central verification are enabled.",actions);}
+    if(result.pass){showBox("Pass: "+score+"/20","You have met the 75% mark. This test stores a provisional browser result; an official certificate is not issued until secure scoring and central verification are enabled.",'<div class="actions"><a class="button secondary" href="cse-module-2-certificate-preview.html">View Certificate Design Preview</a><a class="button secondary" href="cse-module-2.html">Back to Unit 2</a></div>');}
     else {showBox("Result: "+score+"/20","You need 15 correct answers to pass. "+(attempt<2?"One further attempt remains. Review the material before trying again.":"Both locally tracked attempts have been used."),actions);}
   }
   async function startExam(){
