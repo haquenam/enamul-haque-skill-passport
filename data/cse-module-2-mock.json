@@ -1,0 +1,169 @@
+{
+  "courseId": "cse-non-cse",
+  "moduleId": "module-2",
+  "title": "Unit 2 Data and Analysis — Practice Mock",
+  "language": "bn",
+  "version": "0.1.0",
+  "status": "draft-not-live",
+  "exercisePolicy": {
+    "questionCount": 10,
+    "questionType": "multiple_choice",
+    "optionsPerQuestion": 4,
+    "recommendedReadinessScore": 7,
+    "certificateAssessment": false,
+    "showExplanationAfterSubmit": true,
+    "purpose": "practice_only_unlimited_attempts"
+  },
+  "questions": [
+    {
+      "id": "CSE2-MOCK-001",
+      "topic": "ict",
+      "difficulty": "easy",
+      "question": "কোন কাজে ডেটা সবচেয়ে বেশি সহায়ক হতে পারে?",
+      "options": [
+        "সব সিদ্ধান্ত যন্ত্রকে ছেড়ে দিতে",
+        "যে কোনো জরিপ বন্ধ করতে",
+        "প্রমাণের ভিত্তিতে সিদ্ধান্ত নিতে",
+        "তথ্য না দেখেই অনুমান করতে"
+      ],
+      "correctOptionIndex": 2,
+      "explanation": "ডেটার অন্যতম ব্যবহার হলো তথ্যভিত্তিক সিদ্ধান্ত নেওয়া।",
+      "source": "https://haquenam.gitbook.io/learningwithenam/cse/cse4ncseunit2/unit2video1"
+    },
+    {
+      "id": "CSE2-MOCK-002",
+      "topic": "data-info",
+      "difficulty": "medium",
+      "question": "একটি দোকানের দৈনিক বিক্রির তালিকা বিশ্লেষণ করে 'শুক্রবারে বেশি বিক্রি হয়' জানা গেল। এই সিদ্ধান্তটি কীসের ফল?",
+      "options": [
+        "ডেটা বিশ্লেষণ",
+        "অক্ষর এনকোডিং",
+        "ভিডিও কমপ্রেশন",
+        "বাইনারি সংখ্যা গণনা"
+      ],
+      "correctOptionIndex": 0,
+      "explanation": "কাঁচা বিক্রির ডেটা থেকে প্রবণতা বের করাই ডেটা বিশ্লেষণ।",
+      "source": "https://haquenam.gitbook.io/learningwithenam/cse/cse4ncseunit2/unit2video1"
+    },
+    {
+      "id": "CSE2-MOCK-003",
+      "topic": "collection-viz",
+      "difficulty": "medium",
+      "question": "বয়সভিত্তিক শিক্ষার্থীদের সংখ্যা এক নজরে তুলনা করতে কোনটি যুক্তিযুক্ত?",
+      "options": [
+        "সব উত্তরের পূর্ণ অডিও রেকর্ড",
+        "ডেটার বদলে এলোমেলো ছবি",
+        "শুধু টেবিলের শিরোনাম",
+        "প্রতিটি বয়স গ্রুপের জন্য বার চার্ট"
+      ],
+      "correctOptionIndex": 3,
+      "explanation": "তুলনামূলক শ্রেণিভিত্তিক সংখ্যা বোঝাতে বার চার্ট সহায়ক।",
+      "source": "https://haquenam.gitbook.io/learningwithenam/cse/cse4ncseunit2/unit2video6"
+    },
+    {
+      "id": "CSE2-MOCK-004",
+      "topic": "collection-viz",
+      "difficulty": "medium",
+      "question": "অনলাইন ফরমে বয়স লেখা আছে '২১', '22 years', '২৩'। বিশ্লেষণের আগে কোন কাজটি জরুরি?",
+      "options": [
+        "এগুলোকে ভিডিওতে রূপান্তর করা",
+        "একটি অভিন্ন ফরম্যাটে বয়সের তথ্য পরিষ্কার করা",
+        "সব বয়সকে একই মান করা",
+        "যে কোনো একটি মান রেখে বাকিগুলো বাদ দেওয়া"
+      ],
+      "correctOptionIndex": 1,
+      "explanation": "মিশ্র ফরম্যাটকে একীভূত করা ডেটা প্রস্তুতির অংশ।",
+      "source": "https://haquenam.gitbook.io/learningwithenam/cse/cse4ncseunit2/unit2video6"
+    },
+    {
+      "id": "CSE2-MOCK-005",
+      "topic": "binary",
+      "difficulty": "medium",
+      "question": "দশমিক ৬ সংখ্যার বাইনারি রূপ কোনটি?",
+      "options": [
+        "111",
+        "100",
+        "110",
+        "101"
+      ],
+      "correctOptionIndex": 2,
+      "explanation": "৬ = ৪ + ২; তাই বাইনারিতে 110₂।",
+      "source": "https://haquenam.gitbook.io/learningwithenam/cse/cse4ncseunit2/undefined"
+    },
+    {
+      "id": "CSE2-MOCK-006",
+      "topic": "unicode",
+      "difficulty": "medium",
+      "question": "একই মেসেজে বাংলা অক্ষর ও ইমোজি পাঠাতে কোন ধারণাটি বেশি প্রাসঙ্গিক?",
+      "options": [
+        "শুধু পুরোনো ASCII",
+        "টেবিলের রেকর্ড সংখ্যা",
+        "ইন্টারনেটের মেগাবিট গতি",
+        "ইউনিকোডের অক্ষর ও প্রতীকের কোড পয়েন্ট"
+      ],
+      "correctOptionIndex": 3,
+      "explanation": "ইউনিকোড বহু ভাষার অক্ষর ও ইমোজি শনাক্ত করার ভিত্তি।",
+      "source": "https://haquenam.gitbook.io/learningwithenam/cse/cse4ncseunit2/unit2video7"
+    },
+    {
+      "id": "CSE2-MOCK-007",
+      "topic": "database-sql",
+      "difficulty": "easy",
+      "question": "একটি ডেটাবেজ টেবিলে 'OrderID' ও 'Amount' সাধারণত কী?",
+      "options": [
+        "কলাম বা ফিল্ড",
+        "দুটি আলাদা ডেটাবেজ",
+        "দুটি সার্ভার",
+        "দুটি ভিডিও ফরম্যাট"
+      ],
+      "correctOptionIndex": 0,
+      "explanation": "টেবিলে OrderID এবং Amount আলাদা ফিল্ড বা কলাম হতে পারে।",
+      "source": "https://haquenam.gitbook.io/learningwithenam/cse/cse4ncseunit2/unit2video8"
+    },
+    {
+      "id": "CSE2-MOCK-008",
+      "topic": "database-sql",
+      "difficulty": "hard",
+      "question": "শুধু ১০০০ টাকার বেশি অর্ডারের তথ্য দেখতে SQL-এ কোন ক্লজটি সবচেয়ে প্রয়োজন?",
+      "options": [
+        "CREATE TABLE",
+        "WHERE",
+        "INSERT INTO",
+        "DROP TABLE"
+      ],
+      "correctOptionIndex": 1,
+      "explanation": "SELECT-এর WHERE দিয়ে নির্দিষ্ট শর্তে রেকর্ড বাছাই করা যায়।",
+      "source": "https://haquenam.gitbook.io/learningwithenam/cse/cse4ncseunit2/unit2video8"
+    },
+    {
+      "id": "CSE2-MOCK-009",
+      "topic": "encoding",
+      "difficulty": "medium",
+      "question": "কোন জোড়াটিতে প্রথমটি অডিও এবং দ্বিতীয়টি ইমেজ ফরম্যাট?",
+      "options": [
+        "SQL এবং HTML",
+        "CSV এবং DOCX",
+        "WAV এবং JPEG",
+        "PNG এবং MP3"
+      ],
+      "correctOptionIndex": 2,
+      "explanation": "WAV অডিও এবং JPEG ছবি সংরক্ষণের প্রচলিত ফরম্যাট।",
+      "source": "https://haquenam.gitbook.io/learningwithenam/cse/cse4ncseunit2/unit2video9"
+    },
+    {
+      "id": "CSE2-MOCK-010",
+      "topic": "encoding",
+      "difficulty": "medium",
+      "question": "টেক্সটের বাইটকে ভুল এনকোডিং দিয়ে পড়লে কী দেখা যেতে পারে?",
+      "options": [
+        "ফাইল স্বয়ংক্রিয়ভাবে ভিডিও হয়",
+        "সব অক্ষর অবশ্যই ঠিক থাকে",
+        "ডেটাবেজ টেবিল তৈরি হয়",
+        "অক্ষর বিকৃত হতে পারে"
+      ],
+      "correctOptionIndex": 3,
+      "explanation": "ভুল ডিকোডিং ব্যবহারে লেখা বিকৃত দেখা যেতে পারে।",
+      "source": "https://haquenam.gitbook.io/learningwithenam/cse/cse4ncseunit2/unit2video9"
+    }
+  ]
+}
