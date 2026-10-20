@@ -1,9 +1,11 @@
 # CSE For Non CSE Students — Unit 2 Assessment Blueprint
 
 **Course unit:** Unit 2: Data and Analysis (ICT) / ইউনিট ২: ডেটা এবং বিশ্লেষণ  
-**Status:** DRAFT — awaiting author/content review. Not available to learners.  
+**Status:** Question content approved by the author on 20 October 2026. NOT LIVE: final grading and certificate issuance remain to be integrated and validated.  
 **Date:** 20 October 2026  
 **Data file:** `data/cse-module-2-questions.json`  
+**Practice question file:** `data/cse-module-2-mock.json`  
+**Preview pages:** `cse-module-2.html` and `cse-module-2-mock-exam.html`  
 **Reference unit:** https://haquenam.gitbook.io/learningwithenam/cse
 
 ## Purpose
@@ -19,7 +21,7 @@ A short, independent completion assessment for learners who have watched the Uni
 | Pass mark | 75% |
 | Minimum correct | 15 of 20 |
 | Maximum final attempts | 2 (subject to central enforcement) |
-| Mock exam | 10 separate practice questions, planned; unlimited practice |
+| Mock exam | 10 separate practice questions, built for review; unlimited practice |
 | Bank | 40 distinct, original draft questions |
 | Language | Natural Bangla; familiar technical terms rendered naturally |
 | Certificate | Unit 2 completion certificate only when a verified pass is recorded |
@@ -90,10 +92,10 @@ The public draft JSON is for content review and **must not be used directly for 
 
 ## Sequence after author approval
 
-1. Review the 40 original MCQs and verify the three flagged ICT items against the source lessons.
-2. Approve final scope and wording (mark question set as reviewed/approved).
-3. Create a 10-question practice mock tailored to Unit 2.
-4. Build `cse-module-2.html` and links to the correct Unit 2 GitBook lessons.
+1. 40 original MCQs reviewed and author-approved. Independently cross-check the three flagged ICT items against the source lessons before final go-live.
+2. Scope and wording approved by course author on 20 October 2026.
+3. 10-question practice mock created as `data/cse-module-2-mock.json` with standalone `cse-module-2-mock-exam.html`.
+4. Unit 2 landing page created as `cse-module-2.html` with GitBook references and links to the mock practice exam.
 5. Parameterise/reuse the registration, timed exam, result and certificate code for Module 2, without affecting Module 1.
 6. Wire trusted scoring, central attempt records and certificate issuance for Module 2.
 7. Perform test learner journeys, then enable the new pathway on the Skill Passport homepage.
